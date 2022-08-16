@@ -1,0 +1,933 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	-webkit-text-size-adjust: none;
+}/* 在 iOS 旋轉畫面鎖定文字不縮放 */
+/*電腦版*/
+.t-red {
+	color: #F00;
+}
+#container {
+	background-color: #fff;
+	padding: 0 0 25px;
+}
+/*--------------------------------------------聯絡我們(8)------------------------------------------------*/
+.faq_area {
+	width: 1000px;
+	margin: 0 auto 25px;
+}
+.faq_area .tit {
+	border-bottom: 1px solid #9aa428;
+	border-top: 2px solid #9aa428;
+	background-color: #FAFAFA;
+	text-indent: 15px;
+	color: #9aa428;
+	padding: 15px 0;
+	margin-bottom: 35px;
+	font-size: 24px;
+	position: relative;
+}
+/*側邊選單*/
+.faq_area .tit .tab {
+	width: 600px;
+	position: absolute;
+	right: 0;
+	text-align:right;
+}
+.faq_area .tit .tab li {
+	min-width: 80px;
+	width:auto;
+	padding:0 10px;
+	height: 25px;
+	text-align: center;
+	display:inline-block;
+	margin:0 5px;
+	font-size: 18px;
+	color: #666;
+	text-indent: 0;
+	line-height: 25px;
+}
+.faq_area .tit .tab li.select {
+	background-color: #f58723;
+	border-radius: 3px;
+	color: #fff;
+}
+.faq_area .tit .tab li.select a, .faq_area .tit .tab li a:hover {
+	color: #fff;
+}
+.faq_area .tit .tab li:hover {
+	background-color: #f58723;
+	border-radius: 3px;
+	color: #fff;
+
+}
+.m-tab {
+	display: none;
+}
+.m-headline {
+	display: none;
+}
+.headline {
+	display: block;
+	font-size: 32px;
+	height: 45px;
+	position: relative;
+}
+.headline .search {
+	vertical-align: middle;
+	height: 45px;
+	float: right;
+}
+.headline .search .searchbox {
+	height: 30px;
+	margin: 0;
+	padding: 0 4px;
+	width: 100px;
+	line-height: 30px;
+}
+.headline .search select.searchbox {
+	height: 32px;
+}
+
+.headline .search select, .headline .search input[type="text"]{ float:none;vertical-align:top;}
+.search input[type="button"].go {
+	background: #ffa109 url(../images/icon-view.png) center center no-repeat;
+	width: 50px;
+	height: 30px;
+	border: none;
+	border-radius: 4px;
+}
+.search input[type="button"]:hover {
+	background-color: #a2214c;
+}
+/*樣式*/
+.faq_area .contentbox {
+	border: 1px solid #ECECEC;
+	margin-bottom: 30px;
+}
+.faq_area .contentbox h3 {
+	border-bottom: 2px solid #ECECEC;
+	background-color: #F7F7F7;
+	text-align: center;
+	padding: 25px 0;
+	font-size: 24px;
+	font-weight: 400;
+}
+.faq_area .contentbox h4 {
+	font-size: 21px;
+	text-align: center;
+	font-weight: 400;
+	padding-top: 30px;
+}
+.faq_area .contentbox h4 span.phone {
+	font-size: 30px;
+	color: #18a5d8;
+	font-weight: bold;
+}
+.faqmain {
+	width: 1000px;
+	margin: 0 auto 25px;
+}
+/*線上客服*/
+.extension {
+	height: 200px;
+	padding: 100px 50px 0 100px;
+}
+.extension li {
+	position: relative;
+	width: 170px;
+	height: 150px;
+	float: left;
+	text-align: center;
+	margin-right: 30px;
+}
+.extension li .circle {
+	width: 108px;
+	height: 108px;
+	top: -60px;
+	left: 30px;
+	border: none;
+	border-radius: 100px;
+	position: absolute;
+	color: #fff;
+	font: 55px/100px Verdana, Geneva, sans-serif;
+}
+.extension li.odd {
+	border: 1px solid #b8c240;
+}
+.extension li.odd .circle {
+	width: 108px;
+	height: 108px;
+	background-color: #b8c240;
+	border: none;
+	border-radius: 100px;
+}
+.extension li.even {
+	border: 1px solid #969e32;
+}
+.extension li.even .circle {
+	width: 108px;
+	height: 108px;
+	background-color: #969e32;
+}
+.extension li p {
+	color: #474b1d;
+	font: 21px/24px "微軟正黑體";
+	padding-top: 70px;
+}
+/*答客問 - 列表*/
+.m-qabox {
+	display: none;
+}
+.qabox {
+	display: block;
+}
+.qatop {
+	border: 1px solid #eee;
+	margin-bottom: 20px;
+}
+.qatop h3 {
+	border-top: 3px solid #98a422;
+	background-color: #b8c240;
+	color: #fff;
+	height: 46px;
+	font: bold 21px/46px "微軟正黑體";
+	padding-left: 10px;
+}
+.qatop ul {
+	padding: 10px;
+	padding-bottom: 0;
+}
+.qatop li {
+	background: url(../images/icon-q.png) 0 0 no-repeat;
+	padding-left: 40px;
+	padding-bottom: 15px;
+	color: #474b1d;
+	font-size: 18px;
+	line-height: 30px;
+	width: 43%;
+	float: left;
+	overflow : hidden;
+	text-overflow : ellipsis;
+	white-space : nowrap;
+	margin-top: 10px;
+	margin-right: 2%;
+	border-bottom: 1px solid #f1f1f1;
+}
+li.b-none {
+	border: nonel
+}
+.qalistbox {
+	width: 1020px;
+}
+.qalistbox li.item {
+	width: 320px;
+	float: left;
+	margin-right: 16px;
+	margin-bottom: 20px;
+	border: 1px solid #eee;
+}
+.qalistbox li.item h3 {
+	border-top: 3px solid #9ba343;
+	background-color: #f5f7da;
+	color: #9ba343;
+	height: 46px;
+	font: bold 21px/46px "微軟正黑體";
+	padding-left: 10px;
+}
+.qalistbox .item li {
+	background: url(../images/icon-q.png) 0 0 no-repeat;
+	padding-left: 40px;
+	padding-bottom: 8px;
+	font-size: 18px;
+	line-height: 30px;
+	width: 82%;
+	float: left;
+	margin: 10px 5px;
+	border-bottom: 1px solid #f1f1f1;
+}
+.qatop li a, .qalistbox .item li a {
+	color: #474b1d;
+}
+.qatop li a:hover, .qalistbox .item li a:hover {
+	color: #970535;
+}
+.more {
+	margin: 10px auto 20px auto;
+	text-align: center;
+	width: 130px;
+	height: 30px;
+}
+.more a {
+	text-align: center;
+	color: #ff7700;
+	display: block;
+	line-height: 30px;
+	border: 1px dotted #ccc;
+}
+.more a:hover {
+	background-color: #ff7700;
+	color: #fff;
+}
+.call {
+	display: block;
+	width: 980px;
+	background-color: #f5f5f5;
+	padding: 20px 10px;
+	color: #707070;
+	font-size: 18px;
+	margin-top: 20px;
+}
+.call input[type="button"] {
+	width: 100px;
+	height: 30px;
+	font-size: 18px;
+	color: #fff;
+	background-color: #ffa109;
+	font-weight: bolder;
+	line-height: 30px;
+	padding: 0 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-left: 10px;
+}
+.call input[type="button"]:hover {
+	background-color: #970535;
+}
+/*問答開合列表*/
+.qaContent {
+	width: 1000px;
+}
+.qaContent ul.qapart li {
+	width: 100%;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #f5f6e7;
+	border-bottom: 1px solid #ddd;
+}
+.qaContent ul.qapart li .octit {
+	color: #333;
+	height: 46px;
+	font: 18px/46px "微軟正黑體";
+	text-indent: 10px;
+	cursor: pointer;
+	background: #fff url(../images/arrow-qa.png) right center no-repeat;
+}
+.qaContent ul.qapart li .ocmain {
+	padding: 20px;
+}
+.qaContent ul.qapart li:nth-child(odd) .octit {
+ background-color: #f5f5f5;
+}
+.qaContent ul.qapart li .open {
+	color: #333;
+	height: 46px;
+	font: 18px/46px "微軟正黑體";
+	cursor: pointer;
+	border-bottom: 1px solid #eee;
+	background: url(../images/arrow-qa.png) right center no-repeat;
+}
+.qaContent ul.qapart li .close {
+	color: #fff;
+	height: 46px;
+	font: 18px/46px "微軟正黑體";
+	cursor: pointer;
+	background: #9ea63a url(../images/arrow-qa-on.png) right center no-repeat;
+}
+/*客服側邊開合選單*/
+
+.qaContent ul.qaside li {
+	width: 100%;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+	font: 18px/40px "微軟正黑體";
+	text-indent: 10px;
+}
+.qaContent ul.qaside li:hover {
+	background-color: #f5f6e7;
+}
+.qaContent ul.qaside li .octit {
+	color: #333;
+	height: 46px;
+	font: 18px/46px "微軟正黑體";
+	text-indent: 10px;
+	cursor: pointer;
+	background: #fff url(../images/arrow-qa.png) right center no-repeat;
+}
+.qaContent ul.qaside li .qaside {
+	padding: 20px;
+}
+.qaContent ul.qaside li:nth-child(odd) .octit {
+ background-color: #f5f5f5;
+}
+.qaContent ul.qaside li .open {
+	color: #98a21a;
+	height: 46px;
+	font: bold 21px/46px "微軟正黑體";
+	padding-left: 10px;
+	cursor: pointer;
+	border-top: 3px solid #9ea639;
+	background: #f5f7da url(../images/arrow-qa2.png) right center no-repeat;
+}
+.qaContent ul.qaside li .close {
+	color: #fff;
+	height: 46px;
+	font: bold 21px/46px "微軟正黑體";
+	padding-left: 10px;
+	cursor: pointer;
+	background: #9ea63a url(../images/arrow-qa-on.png) right center no-repeat;
+	border-top: 3px solid #828b14;
+}
+/*分頁*/
+.pagination {
+	float: right;
+	margin-top: 3px;
+}
+.pagination li {
+	display: block;
+	width: 24px;
+	height: 24px;
+	font: 16px/24px "微軟正黑體";
+	text-align: center;
+	color: #c9c9c9;
+	margin: 0 3px;
+	float: left;
+	cursor: pointer;
+}
+.pagination li.current, .pagination li:hover {
+	background-color: #ffa109;
+	border: none;
+	border-radius: 24px;
+	color: #fff;
+}
+/*客服*/
+.customerbox {
+	width: 1000px;
+}
+.customerbox .cus-fL {
+	width: 320px;
+	float: left;
+}
+/*問答開合列表*/
+.customerbox .cus-fL .qaContent {
+	width: 100%;
+	border: 1px solid #eee;
+}
+/*客服右欄位*/
+.customerbox .cus-fR {
+	width: 656px;
+	float: right;
+}
+.customerbox .cusbox {
+	border: 1px solid #ddd;
+	margin-top: -6px;
+	margin-bottom: 10px;
+	width:100%;
+}
+.customerbox .cusbox h3 {
+	background-color: #f5f6e7;
+	border-top: 3px solid #828b14;
+	color: #666;
+	text-indent: 10px;
+	font: 21px/46px "微軟正黑體";
+}
+.customerbox .cusmain {
+	padding: 10px 20px;
+}
+.customerbox .cusmain li {
+	list-style-type: square;
+	list-style-position: outside;
+	font: 16px/24px "微軟正黑體";
+	margin-left: 22px;
+}
+.customerbox .cusmain a {
+	color: #970535;
+}
+.cusbox .titpic {
+	margin: 0;
+	padding: 0;
+}
+.cusbox .notice {
+	background-color: #f5f5f5;
+	padding: 10px 20px;
+	line-height: 30px;
+}
+.red {
+	color: #d23232;
+}
+/*客服表單*/
+.clickbtnset {
+	width: 86%;
+	margin: 20px auto 30px auto;
+}
+.clickbtnset .btn01 {
+	width: 260px;
+	height: 60px;
+	background-color: #FFA209;
+	text-align: center;
+	line-height: 60px;
+	font-size: 23px;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-radius: 2px;
+	float: right;
+}
+.clickbtnset .btn01 a {
+	width: 260px;
+	height: 60px;
+	color: #fff;
+	display: block;
+}
+.clickbtnset .btn02 {
+	width: 260px;
+	height: 60px;
+	background-color: #CAC6BD;
+	text-align: center;
+	line-height: 60px;
+	font-size: 23px;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-radius: 2px;
+	float: left;
+}
+.clickbtnset .btn02 a {
+	width: 260px;
+	height: 60px;
+	color: #fff;
+	display: block;
+}
+/*表單輸入*/
+.cusbox .infobox {
+	margin: 0 20px 30px 20px;
+}
+.cusbox .infobox table {
+	border-top: 2px solid #ddd;
+}
+.cusbox .infobox tr.odd {
+	background-color: #f5f5f5;
+}
+.cusbox .infobox tr.odd th {
+	background-color: #ececec;
+}
+.cusbox .infobox td, .cusbox .infobox th {
+	border-bottom: 1px solid #ddd;
+	padding: 5px;
+}
+.cusbox .infobox th {
+	text-align: right;
+	padding-right: 5px;
+	background-color: #f6f6f6;
+	width: 25%;
+}
+.cusbox .infobox .remark {
+	color: #0055a5;
+	clear: both;
+}
+.cusbox .infobox input[type="text"], .cusbox .infobox select, .cusbox .infobox textarea {
+	float: left;
+	margin-top: 0;
+	padding: 0;
+	border-radius: 4px;
+	border: 1px solid transparent;
+	border-color: #ddd;
+}
+.cusbox .infobox span.error {
+	float: right;
+	font-size: 15px;
+	color: #CC0000;
+	background: url(../images/icon-error.png) 0 0 no-repeat;
+	padding-top: 0;
+	padding-left:23px;
+}
+.cusbox .infobox span.code {
+	font-size: 15px;
+	background: url(../images/icon-refresh.jpg) 0 bottom no-repeat;
+	background-size: 22px 22px;
+	float: left;
+	text-indent: 23px;
+	padding-top: 0;
+}
+.cusbox .infobox span.code a {
+	color: #006bd8;
+}
+/**/
+.m-none {
+	display: block;
+}
+.m-block {
+	display: none;
+}
+.phonestyle {
+	display: none;
+}
+
+/*手機版*/
+/*------------------------------------------------會員登錄專區------------------------------------------------*/
+@media only screen and ( max-width:999px) {
+.top {
+ display: none;
+}
+.menu {
+ display: none;
+}
+#container {
+ background-color: #fff;
+ padding: 0;
+}
+.faq_area {
+ width: 100%;
+ margin: 0 auto 10px;
+ box-sizing: border-box;
+}
+.faq_area .tit {
+ display: none;
+}
+.faq_area .faqmain {
+ padding: 20px 10px;
+ box-sizing: border-box;
+}
+/*聯絡我們*/
+.faq_area .contentbox {
+ border: 1px solid #ECECEC;
+ margin-bottom: 20px;
+}
+.faq_area .contentbox h3 {
+ border-bottom: 2px solid #ECECEC;
+ background-color: #F7F7F7;
+ text-align: center;
+ padding: 10px 0;
+ font-size: 18px;
+ font-weight: 400;
+}
+.faq_area .contentbox h4 {
+ font-size: 18px;
+ text-align: center;
+ font-weight: 400;
+ padding: 20px 10px 0 10px;
+ line-height: 24px;
+}
+.faq_area .contentbox h4 span.phone {
+ font-size: 30px;
+ color: #18a5d8;
+}
+.faqmain {
+ width: 100%;
+ margin: 0 auto 10px;
+ box-sizing: border-box;
+}
+.faqmain .tit {
+ border-bottom: 1px solid #E3E3E3;
+ border-top: 2px solid #00B2EC;
+ background-color: #FAFAFA;
+ text-indent: 15px;
+ color: #00B2EC;
+ padding: 12px 0;
+ margin-bottom: 10px;
+ font-size: 18px;
+}
+/*側邊選單*/
+.m-tab {
+ width: 100%;
+ height: 40px;
+ background-color: #fafafa;
+ text-align:center;
+}
+.m-tab li {
+min-width: 20%;
+width:auto;
+ height: 40px;
+ text-align: center;
+ display:inline-block;
+ margin: 0 5px;
+ font-size: 18px;
+ color: #666;
+ text-indent: 0;
+ line-height: 40px;
+}
+.m-tab li.select {
+ border-bottom: 3px solid #b8c240;
+ color: #b8c240;
+ font-weight: bold;
+}
+.m-tab li.select a {
+ color: #b8c240;
+}
+.m-tab {
+ display: block;
+}
+/*線上客服*/
+.extension {
+ height: 0;
+ padding: 0;
+}
+.extension li {
+ position: relative;
+ width: 44%;
+ height: 130px;
+ float: left;
+ text-align: center;
+ margin: 60px 0 10px 12px;
+}
+.extension li .circle {
+ width: 80px;
+ height: 80px;
+	/*	top:-60px;*/
+	top: 50%;
+ left: 50%;
+ margin-top: -120px;
+ margin-left: -54px;
+ border: none;
+ border-radius: 80px;
+ position: absolute;
+ color: #fff;
+ font: 50px/100px Verdana, Geneva, sans-serif;
+}
+.extension li p {
+ color: #474b1d;
+ font: 18px/24px "微軟正黑體";
+ padding-top: 60px;
+}
+/*搜尋+標題*/
+.headline {
+}
+.m-headline {
+}
+
+/*問答開合列表*/
+.qaContent {
+ width: 100%;
+}
+.qaContent ul.qapart {
+ margin-bottom: 20px;
+}
+.qalist li {
+ background: #fff url(../images/arrow-q.png) 2px center no-repeat;
+ line-height: 48px;
+ text-indent: 36px;
+ overflow : hidden;
+ text-overflow : ellipsis;
+ white-space : nowrap;
+}
+.qalist li a {
+ width: 100%;
+ line-height: 48px;
+ display: block;
+}
+.qalist li:nth-child(odd) {
+ background-color: #f5f5f5;
+}
+.call {
+ display: none;
+}
+/*手機版開合樣式-1*/
+.phonestyle {
+ display: block;
+ font-size: 18px;
+ margin-bottom: 20px;
+}
+.phonestyle li {
+ padding: 0;
+ box-sizing: border-box;
+ margin-bottom: 5px;
+}
+.phonestyle .qastyle {
+ width: 100%;
+ clear: both;
+}
+.phonestyle li .octit {
+ height: 40px;
+ text-indent: 5px;
+ line-height: 40px;
+ font-size: 18px;
+ color: #FFF;
+}
+.phonestyle li .open {
+ background: url(../images/phone/open.png) right no-repeat;
+ background-color: #8C8C8C;
+ background-size: 25px 25px;
+}
+.phonestyle li .close {
+ background: url(../images/phone/close.png) right no-repeat;
+ background-color: #FFA209;
+ background-size: 25px 25px;
+}
+/*手機版開合樣式-2*/
+.qaContent ul.qapart {
+ width: 100%;
+ clear: both;
+}
+.qaContent ul.qapart li {
+ width: 100%;
+ height: auto;
+ padding: 0;
+ box-sizing: border-box;
+}
+.qaContent ul.qapart li .octit {
+ width: 100%;
+ height: auto;
+ text-indent: 5px;
+ color: #FFF;
+ font: 18px/24px "微軟正黑體";
+}
+.qaContent ul.qapart li .open {
+height: auto;
+ padding: 10px;
+ padding-right: 20px;
+ box-sizing: border-box;
+ color: #FFF;
+ background: url(../images/phone/open.png) right no-repeat;
+ background-color: #8C8C8C;
+ background-size: 25px 25px;
+ font: 18px/24px "微軟正黑體";
+ display:block;
+}
+
+.qaContent ul.qapart li .close {
+ font: 18px/24px "微軟正黑體";
+ padding: 10px;
+ padding-right: 20px;
+ box-sizing: border-box;
+ background: url(../images/phone/close.png) right no-repeat;
+ background-color: #FFA209;
+ background-size: 25px 25px;
+ width: 100%;
+ height: auto;
+}
+#container {
+ background-color: #fff;
+ padding: 0;
+}
+/*答客問 - 列表*/
+.m-qabox {
+ display: block;
+}
+.qabox {
+ display: none;
+}
+/*客服*/
+.customerbox {
+ width: 100%;
+}
+.customerbox .cusbox {
+ border: 1px solid #ddd;
+ margin-top: -6px;
+ margin-bottom: 10px;
+ height:auto;
+}
+.customerbox .cusbox h3 {
+ background-color: #f5f6e7;
+ border-top: 3px solid #828b14;
+ color: #666;
+ text-indent: 10px;
+ font: 21px/46px "微軟正黑體";
+}
+.customerbox .selectbox {
+ background-color: #f5f6e7;
+ border-top: 3px solid #828b14;
+ height: 110px;
+}
+.customerbox .selectbox select {
+ width: 92%;
+ margin: 10px; margin-bottom:0;
+}
+.customerbox input[type="text"], .customerbox select {
+ width: 100%;
+ margin-bottom: 10px;
+}
+.customerbox .cusmain {
+ padding: 10px 20px;
+}
+.customerbox .cusmain li {
+ font: 16px/24px "微軟正黑體";
+ margin-left: 22px;
+}
+.customerbox .cusmain a {
+ color: #970535;
+}
+.cusbox .titpic {
+ margin: 0;
+ padding: 0;
+}
+.cusbox .notice {
+ background-color: #f5f5f5;
+ padding: 10px 20px;
+ line-height: 30px;
+}
+.cusbox .infobox span.error {
+ float: right;
+ font-size: 15px;
+ color: #CC0000;
+ background: url(../images/icon-error.png) 0 center no-repeat;
+ padding-top: 0;
+}
+.infobox li {
+ display: block;
+ width: 100%;
+ clear: both;
+ padding: 10px 0;
+}
+/*客服表單*/
+.clickbtnset {
+ width: 90%;
+ margin: 20px auto 30px auto;
+}
+.clickbtnset .btn01 {
+ width: 44%;
+ height: 60px;
+ background-color: #FFA209;
+ text-align: center;
+ line-height: 60px;
+ font-size: 23px;
+ font-weight: bold;
+ color: #FFFFFF;
+ border-radius: 2px;
+ float: right;
+}
+.clickbtnset .btn01 a {
+ width: 100%;
+ height: 60px;
+ color: #fff;
+ display: block;
+}
+.clickbtnset .btn02 {
+ width: 44%;
+ height: 60px;
+ background-color: #CAC6BD;
+ text-align: center;
+ line-height: 60px;
+ font-size: 23px;
+ font-weight: bold;
+ color: #FFFFFF;
+ border-radius: 2px;
+ float: left;
+}
+.clickbtnset .btn02 a {
+ width: 100%;
+ height: 60px;
+ color: #fff;
+ display: block;
+}
+.m-none {
+ display: none;
+}
+.m-block {
+ display: block;
+}
+}
+@media only screen and ( max-width:603px) {
+.headline {
+	display: none;
+}
+.m-headline {
+	display: block;
+}
+.cusbox .infobox li img{ display:block}
+.cusbox img{ display:block}
+}
+/*FAQ 驗證碼用*/
+@media only screen and ( max-width:999px) {
+.cusbox img{ display:block}
+}

@@ -1,0 +1,459 @@
+@charset "utf-8";
+/* CSS Document */
+body { -webkit-text-size-adjust: none; }/* 在 iOS 旋轉畫面鎖定文字不縮放 */
+body { height: 100%; }
+html { height: 100%; }
+/*電腦版*/
+/*------------------------------------------------卡友好康(2)------------------------------------------------*/
+
+#container { background-color: #fff; }
+.events { width: 1000px; /*margin: 0 auto 25px;*/
+margin: 0 auto 0px; }
+.events .tit { border-bottom: 1px solid #E3E3E3; border-top: 2px solid #342A66; background-color: #FAFAFA; text-indent: 15px; color: #342A66; padding: 15px 0; font-size: 24px; position: relative; }
+.events .order select { float: none; }
+.activity { margin-top: 10px; }
+.activity .item { border: 1px solid #ebebeb; height: 570px; }
+.activity .item .pic { height: 320px; }
+.activity .item .sort { color: #b3486b; font-size: 16px; padding: 10px 10px 0; position: relative; }
+.activity .item .sort .tag { position: absolute; right: 10px; border-radius: 3px; text-align: center; line-height: 20px; padding: 0px 5px 2px 5px; height: 20px; color: #fff; font-size: 15px; top: 10px; cursor: pointer; }
+.activity .item .sort .add { background-color: #fff; border: 1px solid #FF9C03; color: #FF9C03; }
+.activity .item .sort .add:hover { background-color: #FF9C03; color: #fff; }/*加入收藏*/
+.activity .item .sort .del { background-color: #FF9C03; color: #fff; }
+.activity .item .sort .del:hover { background-color: #fff; border: 1px solid #FF9C03; color: #FF9C03; }/*取消收藏*/
+.activity .item .sort .orgbg { background-color: #FF9C03; }/*免費得點*/
+.activity .item .sort .greenbg { background-color: #5FB96F; }/*累點活動*/
+.activity .item .sort .redbg { background-color: #DF6850; }/*兌點活動*/
+.activity .item .sort .perbg { background-color: #9081EA; }/*持卡優惠*/
+.activity .item .sort .blubg { background-color: #0099CC }/*主題活動*/
+.activity .item h3 { font: 24px/30px "微軟正黑體"; overflow: hidden; text-align: left; text-overflow: ellipsis; white-space: nowrap; padding: 10px; }
+.activity .item .date { color: #2298B2; font-size: 16px; padding: 0 10px; padding-bottom: 10px; }
+.activity .item .txt { padding: 0 10px; height: 4.2em; overflow: hidden; }
+.activity .item .btn { width: 126px; height: 30px; border: 1px dotted #ccc; margin: 15px auto; text-align: center; color: #ff7700; line-height: 30px; }
+.activity .item .btn a { width: 126px; height: 30px; display: block; color: #ff7700; }
+.activity .item .btn a:hover { background-color: #ff7700; color: #fff; }
+.activity .list li { float: left; width: 320px; margin-right: 20px; margin-bottom: 20px; }
+.activity .list li:nth-child(3n) { margin-right: 0px; }
+/*--內頁--*/
+.eventin { margin-top: 35px; }
+.storeinfo { margin-bottom: 10px; }
+.storeinfo .pic { width: 300px; height: 300px; float: left; }
+.storeinfo .pic img { width: 100%; height: auto; }
+.storeinfo .picp { display: none; }
+.storeinfo .info { width: 680px; height: auto; float: right; }
+.storeinfo .info h3 { font-size: 32px; font: 32px/36px "微軟正黑體"; margin-bottom: 40px; }
+.storeinfo .info .data { border-bottom: 1px solid #cfcfcf; padding-bottom: 6px; margin-bottom: 5px; position: relative; }
+.storeinfo .info .data .brand { color: #b3486b; }
+.storeinfo .info .data .popular { color: #095dc5; }
+.storeinfo .info .data .share { float: right; }
+/*分享*/
+.storeinfo .info .data .share { position: absolute; right: 0; bottom: 5px; }
+.storeinfo .info .data .share li { float: left; width: 28px; height: 28px; margin-left: 10px; }
+.storeinfo .info .data .share li a { width: 28px; height: 28px; display: block; }
+.storeinfo .info .data .share li.txt { width: 50px; font-size: 16px; line-height: 28px; }
+.storeinfo .info .data .share li.google { background: url(../images/s-google.jpg) no-repeat; background-size: contain; background-image: url(../images/s-google_ie8.jpg) \9; background-repeat: no-repeat \9; }
+.storeinfo .info .data .share li.fb { background: url(../images/s-fb.jpg) no-repeat; background-size: contain; background-image: url(../images/s-fb_ie8.jpg) \9; background-repeat: no-repeat \9; }
+.storeinfo .info .data .share li.mail { background: url(../images/s-mail.jpg) no-repeat; background-size: contain; background-image: url(../images/s-mail_ie8.jpg) \9; background-repeat: no-repeat \9; }
+.storeinfo .info .data .share li.p { background: url(../images/s-p.jpg) no-repeat; background-size: contain; background-image: url(../images/s-p_ie8.jpg) \9; background-repeat: no-repeat \9; }
+/*加入收藏*/
+.storeinfo .info .data .btn_fb { position: absolute; right: 280px; bottom: 5px; }
+.storeinfo .info .data .add { position: absolute; width: 60px; height: 25px; border-radius: 3px; border: 1px solid #EBEBEB; background-color: #FAFAFA; right: 210px; bottom: 5px; font-size: 13px; text-align: center; line-height: 25px; }
+.storeinfo .info .data .del { position: absolute; width: 60px; height: 25px; border-radius: 3px; border: 1px solid #EBEBEB; background-color: #FAFAFA; right: 280px; bottom: 5px; font-size: 13px; text-align: center; line-height: 25px; }
+.storeinfo .info .data .sharebtn { display: none; }
+.storeinfo .info .data .select { border: 1px solid #ffa109; background-color: #fff; color: #ffa109 }
+.storeinfo .info .data .select a { color: #ffa109 }
+/*詳細資訊*/
+.storeinfo .info .list li { border-bottom: 1px solid #cfcfcf; border-left: 5px solid #b3486b; margin-bottom: 4px; color: #959595; font-size: 16px; position: relative; padding: 3px 0 3px 80px; min-height: 30px; word-break: break-all; }
+.storeinfo .info .list li .tt { padding-right: 20px; color: #434343; position: absolute; left: 5px; top: 3px; }
+.storeinfo .info .list li .space { word-spacing: 4px; top: 3px; }
+.storeinfo .info .list li a { color: #b3486b; display: inline-block; word-break: break-all; }
+.storeinfo .info .list li .btn { background-color: #ffa109; border-radius: 3px; color: #fff; height: 30px; margin-bottom: 10px; margin-left: 10px; min-width: 80px; padding: 1px 5px; font-size: 15px; }
+.storeinfo .info .list li .btn a { color: #fff; }
+/*活動說明*/
+.eventin .explain { margin-bottom: 20px; }
+.eventin .explain h4 { font-size: 20px; color: #b3486b; border-bottom: 1px solid #b3486b; padding-bottom: 10px; font-weight: 400; }
+.eventin .explain .txt { padding: 10px 0; }
+/*優惠活動*/
+.favorable { position: relative; }
+.favorable h4 { font-size: 20px; border-bottom: 1px solid #d9d9d9; border-top: 1px solid #d9d9d9; padding: 10px 0; font-weight: 400; margin-bottom: 20px; }
+.favorable .remark { position: absolute; right: 0; top: 10px; }
+.favorable .remark li { right: 10px; border-radius: 3px; text-align: center; line-height: 20px; padding: 2px 5px; height: 20px; color: #fff; font-size: 16px; float: left; margin-left: 5px; }
+.favorable .remark li.orgbg { background-color: #FF9C03; }/*免費得點*/
+.favorable .remark li.greenbg { background-color: #5FB96F; }/*累點活動*/
+.favorable .remark li.redbg { background-color: #DF6850; }/*兌點活動*/
+.favorable .remark li.perbg { background-color: #9081EA; }/*持卡優惠*/
+.favorable .remark li.blubg { background-color: #0099CC }/*主題活動*/
+.favorable .list { }
+.favorable .list li { width: 320px; float: left; margin-right: 15px; height: 45px; line-height: 45px; text-indent: 50px; overflow: hidden; text-overflow : ellipsis; white-space : nowrap; margin-bottom: 15px; }
+.favorable .list li:nth-child(3n) { margin-right: 0px; } /*倍數套用*/
+.favorable .list li.f01 { background: url(../images/fav01.jpg) no-repeat; background-size: contain; }
+.favorable .list li.f02 { background: url(../images/fav02.jpg) no-repeat; background-size: contain; }
+.favorable .list li.f03 { background: url(../images/fav03.jpg) no-repeat; background-size: contain; }
+.favorable .list li.f04 { background: url(../images/fav04.jpg) no-repeat; background-size: contain; }
+.favorable .list li.f05 { background: url(../images/fav05.jpg) no-repeat; background-size: contain; }
+/*主題活動*/
+.eventinfo { margin-top: 35px; }
+.eventinfo .pic { width: 100%; height: auto; margin-bottom: 25px; }
+.eventinfo h3 { font: 32px/36px "微軟正黑體"; margin-bottom: 30px; }
+.eventinfo .data { border-bottom: 1px solid #cfcfcf; padding-bottom: 6px; margin-bottom: 15px; position: relative; }
+.eventinfo .data .brand { color: #b3486b; }
+.eventinfo .data .popular { color: #095dc5; }
+.eventinfo .data .share { float: right; }
+/*主題活動-分享*/
+
+.eventinfo .data .share { position: absolute; right: 0; bottom: 5px; }
+.eventinfo .data .share li { float: left; width: 28px; height: 28px; margin-left: 10px; }
+.eventinfo .data .share li a { width: 28px; height: 28px; display: block; }
+.eventinfo .data .share li.txt { width: 50px; font-size: 16px; line-height: 28px; }
+.eventinfo .data .share li.google { background: url(../images/s-google.jpg) no-repeat; background-size: 100% auto; background-image: url(../images/s-google_ie8.jpg) \9; background-repeat: no-repeat \9; }
+.eventinfo .data .share li.fb { background: url(../images/s-fb.jpg) no-repeat; background-size: 100% auto; background-image: url(../images/s-fb_ie8.jpg) \9; background-repeat: no-repeat \9; }
+.eventinfo .data .share li.mail { background: url(../images/s-mail.jpg) no-repeat; background-size: 100% auto; background-image: url(../images/s-mail_ie8.jpg) \9; background-repeat: no-repeat \9; }
+.eventinfo .data .share li.p { background: url(../images/s-p.jpg) no-repeat; background-size: 100% auto; background-image: url(../images/s-p_ie8.jpg) \9; background-repeat: no-repeat \9; }
+/*主題活動-加入收藏*/
+.eventinfo .data .add { position: absolute; width: 80px; height: 25px; border-radius: 3px; border: 1px solid #EBEBEB; background-color: #FAFAFA; right: 210px; bottom: 5px; font-size: 15px; text-align: center; line-height: 25px; }
+.eventinfo .data .select { border: 1px solid #ffa109; background-color: #fff; color: #ffa109 }
+.eventinfo .data .select a { color: #ffa109 }
+/*主題活動-詳細資訊*/
+.eventinfo .info { }
+.eventinfo .info .list { width: 320px; float: left; }
+.eventinfo .info .list li { border-bottom: 1px solid #cfcfcf; border-left: 5px solid #b3486b; margin-bottom: 10px; color: #959595; padding-bottom: 8px; padding-left: 100px; position: relative; min-height: 23px; }
+.eventinfo .info .list li .tt { padding-right: 20px; color: #434343; position: absolute; width: auto; left: 10px; }
+.eventinfo .info .list li .space { word-spacing: 4px; }
+.eventinfo .info .list li a { color: #b3486b; }
+.eventinfo .info .list li .btn { padding: 3px; background-color: #ffa109; border-radius: 3px; font-size: 15px; color: #fff; margin-left: 10px; }
+.eventinfo .info .list li .btn a { color: #fff; }
+/*主題活動-活動說明*/
+.eventinfo .explain { float: right; width: 665px; }
+.eventinfo .explain h4 { font-size: 20px; color: #b3486b; border-bottom: 1px solid #b3486b; padding-bottom: 8px; font-weight: 400; }
+.eventinfo .explain .txt { padding: 10px 0; }
+/*遊戲活動*/
+.gamearea { width: 1000px; height: 1168px; margin: 0 auto; background-position: center 0; background-repeat: no-repeat; position: relative; }
+.gameflash { width: 880px; height: 620px; margin: 0 auto; position: absolute; top: 380px; left: 60px; z-index: 9; }
+.gamefoot { width: 1000px; height: 212px; margin-top: -44px; background-position: center 0; background-repeat: no-repeat; position: absolute; z-index: 1; bottom: 0; }
+.gamefoot ul { position: absolute; bottom: 48px; left: 160px; font-size: 14px; }
+
+/*遊戲活動-彈珠台*/
+.gamebg { width: 880px; height: 620px; position: absolute; top: 0; left: 0; }
+.gameinfo .tit { color: #e34008; font: 42px/50px "微軟正黑體"; background: url(../images/game-tit.png) center center no-repeat; text-align: center; text-indent: 0; border: 0; clear: both; margin-top: 20px; }
+#swiffycontainer.pinball { width: 887px; height: 620px }/*彈珠台*/
+.start_btn { width: 240px; height: 74px; position: absolute; bottom: 150px; right: 170px; z-index: 99; }
+/*彈珠台-遊戲開始*/
+.start_btn a { width: 240px; height: 74px; display: block; }
+
+/*遊戲活動-戳戳樂*/
+.gameflash .puncharea { /*display: inline-block;*/
+width: 100%; height: auto; position: relative; }
+.puncharea .punchbox { /*	display: block;*/
+width: 100%; margin-top: 30px; margin-left: 30px; }
+.puncharea .punchbox > div { display: inline-block; text-align: center; vertical-align: middle; width: 272px; height: 186px; background-position: 0 0; background-repeat: no-repeat; cursor: pointer; }
+/*戳戳樂-遊戲開始*/
+.puncharea .start_btn { width: auto; height: auto;  z-index: 99; position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-color: rgba(0,0,0,0.5); }
+.puncharea .start_btn a { width: 300px; height: 140px;position: absolute; top: 50%; left: 50%; margin: -70px 0 0 -150px; }
+#swiffycontainer.punch { width: 272px; height: 186px; }/*戳戳樂*/
+
+/*遊戲步驟*/
+.gameinfo .process { text-align: center; }
+.gameinfo .process li { min-height: 80px; padding: 0 0 0 130px; display: inline-block; *display:inline;
+zoom: 1; vertical-align: top; text-align: left; }
+.process li.step1 { background: url(../images/fun-1.png) 0 0 no-repeat; padding-left: 100px; width: 150px; }
+.process li.step2 { background: url(../images/fun-2.png) 0 0 no-repeat; width: 200px; }
+.process li.step3 { background: url(../images/fun-3.png) 0 0 no-repeat; width: 70px; }
+.process li.step4 { background: url(../images/fun-4.png) 0 0 no-repeat; width: 70px; }
+.gameinfo .process li .next { display: none; }
+/*活動獎品*/	 
+.awardarea { max-width: 1000px; width: 100%; height: auto; }
+.award { text-align: center; min-height: 100px; }
+.award li { display: inline-block; *display:inline;
+zoom: 1; width: 140px; height: 140px; text-align: center; background: url(../images/awards-bg.png) 0 0 no-repeat; color: #fff; font: 40px/140px "微軟正黑體"; cursor: pointer; margin: 0 10px; position: relative; }
+.bonus { display: none; position: absolute; top: 0; left: 0; width: 140px; height: 140px; background: url(../images/awards-bg.png) 0 bottom no-repeat; text-align: center; padding: 40px 10px 0; box-sizing: border-box; }
+.bonus h3, .bonus h5 { color: #f33509; }
+.bonus h3 { font: 35px/35px "微軟正黑體"; }
+.bonus h5 { font: bold 24px/28px "微軟正黑體"; }
+.award li:hover .bonus { display: block; }
+.pc-none { display: none; }
+/*遊戲pop*/
+.game-grats { width: 530px; height: 350px; margin: 0 auto; position: relative; background-position: 0 0; background-repeat: no-repeat; }
+.game-grats .inform { width: 200px; height: 200px; position: absolute; bottom: 10px; right: 32px; color: #fff; text-align: center; font: 36px/42px "微軟正黑體"; }
+.game-grats .inform span { width: 100%; display: block; font-weight: bold; }
+.inf { font: 24px/30px "微軟正黑體"; color: #666; text-align: center; width: 80%; margin: 0 auto; margin-top: 50px; }
+/*活動公告*/
+.bulletin { }
+/*圖文左右條列設定(單元4/6 用)*/
+/*活動公告列表*/
+.bulletilist { width: 100%; }
+.bulletilist li { display: block; position: relative; width: 100%; min-height: 190px; padding: 40px 0 0 300px; margin-bottom: 25px; box-sizing: border-box; }
+.bulletilist li .imgbox { width: 300px; position: absolute; top: 0; left: 0; }
+.bulletilist li .more { text-align: center; width: 130px; margin-right: 10px; margin-top: 10px; }
+.bulletilist li .more a { text-align: center; color: #ff7700; display: block; line-height: 30px; border: 1px dotted #ccc; }
+.bulletilist li .more a:hover { background-color: #ff7700; color: #fff; }
+.bulletilist h3 { color: #a35f21; font-size: 24px; margin-bottom: 10px; }
+.bulletilist h5 { color: #333; font-size: 16px; padding: 5px 0; }
+.bulletilist p { color: #333; font-size: 16px; line-height: 24px; margin-bottom: 10px; }
+/*活動說明*/
+.bulletin .explain { margin-bottom: 20px; }
+.bulletin .explain .sectt { border-bottom: 1px solid #d8d8d8; border-top: 2px solid #d8d8d8; padding: 15px 0; font-size: 20px; text-indent: 15px; margin-bottom: 10px; }
+.bulletin .explain p { padding: 15px; }
+/*得獎名單*/
+.bulletin .wiinner { }
+.bulletin .wiinner .sectt { border-bottom: 1px solid #d8d8d8; border-top: 2px solid #d8d8d8; padding: 15px 0; font-size: 20px; text-indent: 15px; margin-bottom: 10px; }
+.bulletin .wiinner .award { padding: 0 15px; }
+.bulletin .wiinner .award h5 { font-size: 16px; margin-bottom: 10px; }
+.bulletin .wiinner .award h5 span { color: #C00; }
+.winbox { border-left: 1px solid #e3e3e3; margin-left: 15px; margin-bottom: 20px; }
+.winbox .item { width: 33%; float: left; }
+.winbox .item td { padding: 5px; border-bottom: 1px solid #e3e3e3; border-right: 1px solid #e3e3e3; text-align: center; }
+.winbox .item th { padding: 5px; background-color: #efefef; border-right: 1px solid #e3e3e3; border-top: 1px solid #e3e3e3; }
+.bulletin .note { margin-bottom: 20px; }
+.bulletin .note .captit { border-bottom: 1px solid #BA6E4C; height: 23px; margin-bottom: 10px; }
+.bulletin .note .captit .txt { background-color: #BA6E4C; padding: 2px 10px; color: #fff; }
+.bulletin .note li { list-style: decimal; margin-left: 25px; }
+.numarea { display: block; width: 90%; height: auto; margin: 0 auto; padding-bottom: 20px; }
+ul.numbox { display: block; text-align: center; }
+ul.numbox li { display: inline-block; display: inline-block; width: 80px; height: 80px; text-align: center; vertical-align: middle; font: 36px/85px Arial; margin: 5px; margin-bottom: 10px; }
+ul.numbox li a { color: #fff; width: 80px; height: 80px; border: 2px solid #ffa109; background-color: #ffa109; border-radius: 40px; display: block; }
+ul.numbox li a:hover, ul.numbox li.on a { background-color: #fff; border: 2px solid #f33509; color: #f33509; }
+
+/*手機版*/
+@media only screen and ( max-width:999px) {
+.top { display: none; }
+.menu { display: none; }
+/*搜尋pop*/
+.pc-none { display: block; }
+.popup .wbg { width: 90%; margin: 30px auto; background-color: #fff; border-radius: 3px; box-sizing: border-box; }
+.popup .wbg p { padding: 5px 10px; width: 100%; box-sizing: border-box; }
+.popup .wbg select { float: none; width: 100%; }
+.popup .wbg .gap { padding-right: 10px; width: 100%; }
+.popup .wbg input { float: none; width: 100%; box-sizing: border-box; }
+.popup .btnset { text-align: center; }
+.popup .btnset .btn { }
+.popup .btnset .btn a { width: 95px; height: 30px; color: #fff; display: block; }
+.btnset ul { padding: 0 20px; }
+.btnset li { }
+.btnset li:nth-child(even) { float: inherit; }
+.btnset li a { color: #fff; }
+.btnset li:hover { color: #970535; }
+.popup2 { width: 100%; position: fixed; z-index: 999; display: block; }
+.popup2 .wbg { width: 90%; margin: 30px auto; background-color: #fff; border-radius: 3px; box-sizing: border-box; }
+.popup2 .share { padding: 10px; }
+.popup2 .share li { width: 100%; height: 40px; line-height: 40px; border-bottom: 1px solid #e2e2e2; text-indent: 40px; }
+.popup2 .share li a { display: block; }
+.popup2 .share li.tt { text-indent: 0; border-bottom: none; font-size: 16px; height: 20px; line-height: 20px; }
+.popup2 .share li.google { background: url(../images/phone/s-google.jpg) no-repeat 5px; background-size: 30px 30px; }
+.popup2 .share li.fb { background: url(../images/phone/s-fb.jpg) no-repeat 5px; background-size: 30px 30px; }
+.popup2 .share li.mail { background: url(../images/phone/s-mail.jpg) no-repeat 5px; background-size: 30px 30px; }
+.popup2 .share li.p { background: url(../images/phone/s-p.jpg) no-repeat 5px; background-size: 30px 30px; }
+.popup2 .btnset { padding: 10px 0; width: 100%; margin: 10px auto; background-color: #f8f8f8; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; }
+.popup2 .btnset .btn { width: 95px; height: 30px; background-color: #ffa109; text-align: center; line-height: 30px; color: #fff; border-radius: 3px; color: #fff; font-size: 15px; margin: 0 auto; }
+.popup2 .btnset .btn a { width: 95px; height: 30px; color: #fff; display: block; }
+#container { background-color: #fff; padding: 0; }
+.events { width: 100%; margin: 0 auto; }
+.events .tit { border-bottom: 1px solid #E3E3E3; border-top: 2px solid #342A66; background-color: #FAFAFA; text-indent: 15px; color: #342A66; padding: 8px 0; font-size: 18px; position: relative; width: 100%; }
+.events .none { display: none; }
+.events .order select { float: none; display: block; width: 100%; }
+.activity { }
+.activity .item { border: 1px solid #ebebeb; height: auto; min-height: 320px; }
+.activity .item h3 { width: auto; height: 50px; line-height: 24px; color: #464646; font-size: 20px; padding: 0 5px; overflow: hidden; text-overflow : ellipsis; white-space: normal; }
+.activity .item .pic { width: 100%; height: auto; }
+.activity .item .pic img { width: 100%; height: auto; }
+.activity .item .sort { background-color: #f1f1f1; color: #b3486b; position: relative; padding-right: 35%; padding-bottom: 10px; line-height: 1.2em; height: 40px; font-size: 0.9em; margin-bottom: 10px; margin-top: -5px; }
+.activity .item .sort .tag { position: absolute; right: 5px; border-radius: 3px; text-align: center; padding: 5px; color: #fff; width: 30px; height: 30px; line-height: 16px; font-size: 14px; }
+.activity .item .sort .add { background-color: #fff; border: 1px solid #FF9C03; color: #FF9C03; }
+.activity .item .sort .add:hover { background-color: #FF9C03; color: #fff; }/*加入收藏*/
+.activity .item .sort .del { background-color: #FF9C03; color: #fff; }
+.activity .item .sort .del:hover { background-color: #fff; border: 1px solid #FF9C03; color: #FF9C03; }/*取消收藏*/
+.activity .item .sort .orgbg { background-color: #FF9C03; }/*免費得點*/
+.activity .item .sort .greenbg { background-color: #5FB96F; }/*累點活動*/
+.activity .item .sort .redbg { background-color: #DF6850; }/*兌點活動*/
+.activity .item .sort .perbg { background-color: #9081EA; }/*持卡優惠*/
+.activity .item .sort .blubg { background-color: #0099CC }/*主題活動*/
+.activity .item h3 { }
+.activity .item .date { color: #2298B2; padding: 0 5px; margin: 10px auto; width: 80%; height: 28px; border: 1px dotted #ccc; font-size: 0.8em; overflow : hidden; text-overflow : ellipsis; white-space : nowrap; }
+.activity .item .txt { display: none; }
+.activity .item .btn { width: 126px; height: 30px; border: 1px dotted #ccc; margin: 5px auto; text-align: center; color: #ff7700; line-height: 30px; display: none; }
+.activity .item .btn a { width: 126px; height: 30px; display: block; color: #ff7700; }
+.activity .item .btn a:hover { background-color: #ff7700; color: #fff; }
+.activity .list { padding: 0 10px; box-sizing: border-box; }
+.activity .list li { float: left; width: 49%; margin-right: 0; margin-bottom: 10px; }
+.activity .list li:nth-child(2n) { margin-right: 0px; float: right; }
+/*--內頁--*/
+.eventin { margin-top: 0px; padding: 10px; }
+.eventinfo .info .list { width: 100%; float: left; }
+.eventinfo .explain { float: left; width: 100%; }
+.storeinfo { margin-bottom: 10px; }
+.eventinfo { margin-top: 10px; padding: 10px; }
+.storeinfo .pic { display: none }
+.storeinfo .picp { width: 150px; height: 150px; margin-right: 10px; float: left; display: inline; }
+.storeinfo .picp img { width: 100%; height: auto; }
+.storeinfo .info { width: 100%; height: auto; float: none; }
+.storeinfo .info h3 { font: 22px/30px "微軟正黑體"; margin-bottom: 10px; min-height: 150px; height: auto; }
+.eventinfo h3 { font: 22px/30px "微軟正黑體"; margin-bottom: 30px; }
+.storeinfo .info .data { border-bottom: 1px solid #cfcfcf; padding-bottom: 6px; margin-bottom: 5px; position: relative; font-size: 15px; height: 25px; }
+.storeinfo .info .data .brand { color: #b3486b; font-size: 13x; }
+.storeinfo .info .data .popular { color: #095dc5; }
+/*分享*/
+.storeinfo .info .data { padding-bottom: 40px; }
+.storeinfo .info .data .btn_fb { position: static; }
+.storeinfo .info .data .share { position: absolute; right: 0; bottom: 5px; }
+.storeinfo .info .data .share li { float: left; width: 28px; height: 28px; margin-left: 5px; }
+.storeinfo .info .data .share li a { width: 28px; height: 28px; display: block; }
+.storeinfo .info .data .share li.txt { width: 50px; font-size: 16px; line-height: 28px; }
+.storeinfo .info .data .share li.google { background: url(../images/s-google.jpg) no-repeat; background-size: contain; }
+.storeinfo .info .data .share li.fb { background: url(../images/s-fb.jpg) no-repeat; background-size: contain; }
+.storeinfo .info .data .share li.mail { background: url(../images/s-mail.jpg) no-repeat; background-size: contain; }
+.storeinfo .info .data .share li.p { background: url(../images/s-p.jpg) no-repeat; background-size: contain; }
+/*加入收藏*/
+.storeinfo .info .data .add { position: absolute; width: 80px; height: 25px; border-radius: 3px; border: 1px solid #EBEBEB; background-color: #FAFAFA; bottom: 5px; font-size: 15px; text-align: center; line-height: 25px; left: 0; }
+.storeinfo .info .data .del { width: 80px; height: 25px; top: 25px; left: 90px; }
+.storeinfo .info .data .add a { width: 80px; height: 25px; display: block; }
+.storeinfo .info .data .sharebtn { position: absolute; width: 80px; height: 25px; border-radius: 3px; border: 1px solid #ffa109; background-color: #ffa109; right: 210px; bottom: 5px; font-size: 15px; text-align: center; line-height: 25px; top: 25px; left: 90px; color: #fff; }
+.storeinfo .info .data .sharebtn a { width: 80px; height: 25px; display: block; color: #fff; }
+.storeinfo .info .data .select { border: 1px solid #ffa109; background-color: #fff; color: #ffa109 }
+.storeinfo .info .data .select a { color: #ffa109 }
+/*詳細資訊*/
+.storeinfo .info .list { margin: 15px 0; }
+.storeinfo .info .list li { border-bottom: 1px solid #cfcfcf; padding: 0 5px; border-left: 5px solid #b3486b; margin-bottom: 4px; color: #959595; padding-bottom: 4px; font-size: 15px; padding-left: 80px; position: relative; }
+.storeinfo .info .list li .tt { padding-right: 20px; color: #434343; font-size: 15px; position: absolute; left: 5px; }
+.storeinfo .info .list li .space { word-spacing: 4px; }
+.storeinfo .info .list li a { color: #b3486b; font-size: 13px; }
+.storeinfo .info .list li .btn { padding: 3px; background-color: #ffa109; border-radius: 3px; font-size: 15px; color: #fff; margin-left: 0; }
+.storeinfo .info .list li .btn a { color: #fff; display: inline; }
+/*活動說明*/
+.eventin .explain { margin-bottom: 20px; }
+.eventin .explain h4 { font-size: 17px; color: #b3486b; border-bottom: 1px solid #b3486b; padding-bottom: 10px; font-weight: 400; }
+.eventin .explain .txt { padding: 10px 0; font-size: 15px; }
+/*優惠活動*/
+.favorable { position: relative; }
+.favorable h4 { font-size: 15px; border-bottom: 1px solid #d9d9d9; border-top: 1px solid #d9d9d9; padding: 10px 0; font-weight: 400; margin-bottom: 10px; }
+.favorable .remark { position: absolute; right: 0; top: 10px; }
+.favorable .remark li { right: 10px; border-radius: 3px; text-align: center; line-height: 20px; padding: 2px 5px; height: 20px; color: #fff; font-size: 12px; float: left; margin-left: 5px; width: 25px; overflow: hidden; }
+.favorable .remark li.orgbg { background-color: #FF9C03; }/*免費得點*/
+.favorable .remark li.greenbg { background-color: #5FB96F; }/*累點活動*/
+.favorable .remark li.redbg { background-color: #DF6850; }/*兌點活動*/
+.favorable .remark li.perbg { background-color: #9081EA; }/*持卡優惠*/
+.favorable .remark li.blubg { background-color: #0099CC }/*主題活動*/
+.favorable .list { }
+.favorable .list li { width: 100%; float: none; margin-right: 0px; height: 35px; line-height: 35px; text-indent: 40px; overflow: hidden; text-overflow : ellipsis; white-space : nowrap; margin-bottom: 10px; }
+.favorable .list li:nth-child(3n) { margin-right: 0px; } /*倍數套用*/
+.favorable .list li.f01 { background: url(../images/phone/fav01.jpg) no-repeat; background-size: 35px 35px; }
+.favorable .list li.f02 { background: url(../images/phone/fav02.jpg) no-repeat; background-size: 35px 35px; }
+.favorable .list li.f03 { background: url(../images/phone/fav03.jpg) no-repeat; background-size: 35px 35px; }
+.favorable .list li.f04 { background: url(../images/phone/fav04.jpg) no-repeat; background-size: 35px 35px; }
+.favorable .list li.f05 { background: url(../images/phone/fav05.jpg) no-repeat; background-size: 35px 35px; }
+/*----活動公告------*/
+.bulletin { }
+/*圖文左右條列設定(單元4/6 用)*/
+.bulletilist { width: 100%; margin: 0 auto; padding: 0 15px; box-sizing: border-box; padding-top: 15px; }
+.bulletilist li { display: block; position: relative; width: 100%; /* height:400px;*/
+height: auto; padding: 0; padding-bottom: 20px; box-sizing: border-box; border: 1px solid #ccc; background-color: #f2f2f2; margin-bottom: 10px; }
+.bulletilist li .imgbox { width: 100%; height: auto; margin-top: 0; text-align: center; background-color: #fff; position: static; line-height: 0; }
+.bulletilist h3, .bulletilist h5 { width: 90%; line-height: 30px; overflow : hidden; text-overflow : ellipsis; white-space : nowrap; }
+.bulletilist h3 { font-size: 22px; margin-top: 15px; margin-left: 10px; margin-bottom: 0px; }
+.bulletilist h5 { font-size: 16px; padding: 5px 0; margin-left: 10px; margin-bottom: 0px; line-height: 20px; }
+.bulletilist h5 span { display: block; color: #999 }
+.bulletilist p { height: 66px; overflow : hidden; margin-left: 10px; font-size: 16px; line-height: 22px; }
+.morebox { width: 100%; margin: 0 auto; margin-top: 10px; }
+.bulletilist li .more { margin-right: 0; width: 44%; margin: 0 auto; }
+.bulletilist li .more.pL, .bulletilist li .more.pR { position: relative; }
+.bulletilist li .more.pL { left: 10px; }
+.bulletilist li .more.pR { right: 10px; }
+/*活動說明*/
+.bulletin .explain { margin-bottom: 20px; }
+.bulletin .explain .sectt { border-bottom: 1px solid #d8d8d8; border-top: 2px solid #d8d8d8; padding: 10px 0; font-size: 18px; text-indent: 10px; margin-bottom: 10px; }
+.bulletin .explain p { padding: 10px; }
+/*得獎名單*/
+.bulletin .wiinner { }
+.bulletin .wiinner .sectt { border-bottom: 1px solid #d8d8d8; border-top: 2px solid #d8d8d8; padding: 10px 0; font-size: 18px; text-indent: 10px; margin-bottom: 10px; }
+.bulletin .wiinner .award { padding: 0 15px; }
+.bulletin .wiinner .award h5 { font-size: 16px; margin-bottom: 10px; }
+.bulletin .wiinner .award h5 span { color: #C00; }
+.winbox { border-left: 1px solid #e3e3e3; margin-left: 10px; margin-bottom: 20px; padding-right: 10px; }
+.winbox .item { width: 100%; float: none; }
+.winbox .item td { padding: 5px; border-bottom: 1px solid #e3e3e3; border-right: 1px solid #e3e3e3; text-align: center; }
+.winbox .item th { padding: 5px; background-color: #efefef; border-right: 1px solid #e3e3e3; border-top: 1px solid #e3e3e3; }
+.bulletin .note { font-size: 15px; line-height: 20px; word-break: break-all; }
+.bulletin .note .captit { border-bottom: 1px solid #BA6E4C; height: 23px; margin-bottom: 10px; }
+.bulletin .note .captit .txt { background-color: #BA6E4C; padding: 4px 10px; color: #fff; }
+.bulletin .note li { list-style: decimal; margin-left: 25px; margin-bottom: 5px; }
+/*小點數大驚喜 - 小網*/
+.popup .wbg .familyinfo { padding: 20px 10px; }
+.popup .wbg .familyinfo.type2 h2 { color: #282828; font: 18px/24px "微軟正黑體"; width: 80%; }
+.popup .wbg .familyinfo h2 { font: 21px/24px "微軟正黑體"; background-color: none; width: 80%; }
+/*遊戲pop*/
+.game-grats { width: 270px; height: 178px; margin: 0 auto; position: relative; background-size: 100% auto; }
+.game-grats .inform { width: 100px; height: 100px; position: absolute; bottom: 10px; right: 18px; color: #fff; text-align: center; font: 18px/24px "微軟正黑體"; }
+.game-grats .inform span { width: 100%; display: block; font-weight: bold; }
+.inf { font: 18px/24px "微軟正黑體"; color: #3b3b3b; text-align: center; width: 100%; margin-top: 20px; }
+.familylink { margin: 10px 0 0; }
+.familylink a { width: 200px; }
+/*遊戲活動-彈珠台*/
+.gameclick { width: 150px; height: 150px; position: absolute; bottom: 40px; right: 60px; cursor: pointer; z-index: 99; }
+.gamebg { width: 630px; height: 444px; background-size: 100% auto; }
+.events .gameinfo .tit { color: #e34008; font: 30px/30px "微軟正黑體"; background: url(../images/game-tit.png) center center no-repeat; text-align: center; text-indent: 0; border: 0; clear: both; margin-top: 20px; }
+/*遊戲步驟*/
+.gameinfo .process { text-align: left; }
+.gameinfo .process li { min-height: 80px; padding: 0 10px 40px 100px; display: inline-block; *display:inline;
+zoom: 1; vertical-align: top; text-align: left; font-size: 15px; line-height: 21px; position: relative; width: 100%; box-sizing: border-box; }
+.process li.step1 { background: url(../images/phone/fun-1.png) 0 0 no-repeat; background-size: 100px auto; padding-left: 100px; width: 100%; }
+.process li.step2 { background: url(../images/phone/fun-2.png) 0 0 no-repeat; background-size: 100px auto; width: 100%; }
+.process li.step3 { background: url(../images/phone/fun-3.png) 0 0 no-repeat; background-size: 100px auto; }
+.process li.step4 { background: url(../images/phone/fun-4.png) 0 0 no-repeat; background-size: 100px auto; padding: 0 10px 0 100px; min-height: 50px; }
+.gameinfo .process li .next { background: url(../images/phone/fun_arrow.png) bottom center no-repeat; background-size: 40px auto; height: 20px; display: block; position: absolute; bottom: 10px; left: 0; width: 100%; }
+/*活動獎品*/	 
+.awardarea { max-width: 100%; width: 100%; height: auto; }
+.award { padding: 0; }
+.award li { background: url(../images/awards-bg.png) 0 0 no-repeat; background-size: 70px auto; color: #fff; cursor: pointer; display: inline-block; font: 22px/70px "微軟正黑體"; height: 70px; margin: 0 0 10px; position: relative; text-align: left; text-indent: 15px; width: 100%; }
+.award h5.tc { margin: 12px 0 0; }
+.bonus { background: none; display: block; height: 70px; left: 80px; margin-top: 45px; padding: 0; position: absolute; text-align: left; top: -50%; width: auto; }
+.bonus h3, .bonus h5 { color: #f33509; padding: 0; text-align: left; text-indent: 0; }
+.bonus h3 { font: 24px/30px "微軟正黑體"; }
+.bonus h5 { font: bold 21px/24px "微軟正黑體"; }
+.gameinfo p { padding: 10px; }
+}
+/*遊戲 for pad*/
+@media only screen and (min-width: 604px) and (max-width: 999px) {
+.gamefoot.m-none { display: block; }
+.gamefoot.m-block { display: none; }
+/*遊戲活動*/
+.gamearea { width: 720px; height: 841px; margin: 0 auto; background-position: center 0; background-repeat: no-repeat; background-size: 662px auto; position: relative; }
+.gamearea.pb { width: 720px; height: 840px; background-size: 716px auto; }/*彈珠台*/
+.gameflash { width: 630px; height: 450px; margin: 0 auto; background-position: center 0; background-repeat: repeat-y; background-size: 100% auto; position: absolute; top: 270px; left: 45px; z-index: 9; }
+.gamearea.pb .gameflash { height: 440px; }
+.gamefoot { width: 100%; height: 153px; margin-top: 0; background-position: center 0; background-repeat: no-repeat; background-size: 100% auto; position: absolute; bottom: 0; left: 0; z-index: 1; }
+.gamefoot ul { position: absolute; bottom: 48px; left: 160px; font-size: 14px; }
+/*遊戲活動-戳戳樂*/
+.gameflash .puncharea { width: 100%; height: auto; position: relative; }
+.puncharea .punchbox { width: 100%; margin: 0; padding: 15px 0 0; }
+.puncharea .punchbox > div { display: inline-block; text-align: center; vertical-align: middle; width: 190px; height: 130px; background-position: 0 0; background-repeat: no-repeat; cursor: pointer; margin: 0 0 10px 10px; background-size: 100% auto; }
+.puncharea .start_btn {  }/*遊戲開始*/
+.puncharea .start_btn a { background-size: 100% auto; width: 180px; height: 84px; margin: -42px 0 0 -90px;  }
+#swiffycontainer.punch { width: 190px; height: 130px; }/*戳戳樂小網*/
+#swiffycontainer.pinball { width: 100%; height: 444px }/*彈珠台*/
+/*.start_btn { width: 200px; height: 61px; background-size: 100% auto; bottom: 100px; right: 140px; }
+/*彈珠台-遊戲開始*/
+/*.start_btn a { height: 61px; display: block; }*/
+.gameinfo { padding: 0 20px; }
+}
+	
+	
+/*遊戲 for 小網*/
+@media only screen and (max-width: 604px) {
+/*遊戲活動*/
+.gamearea { width: 320px; height: 840px; margin: 0 auto; background-position: center 0; background-repeat: no-repeat; background-size: 320px auto; position: relative; }
+.gameflash { width: 100%; height: 237px; margin: 0 auto; background-position: center 0; background-repeat: no-repeat; background-size: 320px 237px; position: absolute; top: 240px; left: 0px; z-index: 9; }
+.gamearea.pb { height: 860px; }
+.gamearea.pb .gameflash { top: 260px; }
+.gamefoot { width: 100%; height: 365px; margin-top: 0; background-position: center 0; background-repeat: no-repeat; background-size: 100% auto; position: absolute; bottom: 0; left: 0; z-index: 99; }
+.gamefoot ul { position: absolute; bottom: 48px; left: 160px; font-size: 14px; }
+/*彈珠台-遊戲開始*/
+.start_btn { width: 98px; height: 30px; background-size: 100% auto; top: auto; left: auto; bottom: 60px; right: 70px; }
+.start_btn a { width: 98px; height: 30px; margin: 0; }
+/*遊戲活動-戳戳樂*/
+.gameflash .puncharea { width: 100%; height: auto; position: relative; }
+.puncharea .punchbox { width: 100%; margin: 0; padding: 15px 0 0; }
+.puncharea .punchbox > div { display: inline-block; text-align: center; vertical-align: middle; width: 90px; height: 62px; background-position: 0 0; background-repeat: no-repeat; cursor: pointer; margin: 0 0 10px 10px; background-size: 100% auto; }
+.puncharea .start_btn { width: auto; height: auto; }/*遊戲開始*/
+.puncharea .start_btn a { background-size: 100% auto; width: 150px; height: 70px; margin: -35px 0 0 -75px;  }
+#swiffycontainer.punch { width: 90px; height: 62px; }/*戳戳樂小網*/
+#swiffycontainer.pinball { width: 100%; height: 237px }/*彈珠台*/
+.gameinfo { padding: 0 10px; }
+.gamebg { width: 320px; height: 237px; background-size: 100% auto; }
+}

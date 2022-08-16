@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<decorators defaultdir="/WEB-INF/decorators">
+	<!-- Any urls that are excluded will never be decorated by Sitemesh -->
+	<excludes>
+		<!-- admin -->
+		<pattern>*/login.do*</pattern>
+		<pattern>/admin/logout.*</pattern>
+		<pattern>/admin/tinymce/*.*</pattern>
+	</excludes>
+	
+	<decorator name="admin" page="admin.jsp">
+        <pattern>/admin/**</pattern>
+    </decorator>
+	
+</decorators>

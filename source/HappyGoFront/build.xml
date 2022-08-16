@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<project name="HappyGoAdmin" default="local">
+	
+	<target name="init">
+		<property name="name" value="HappyGoPracticeAdmin"/>
+		<property name="src.dir" value="src"/>
+		<property name="web.dir" value="WebRoot"/>
+		<property name="cfg.dir" value="config"/>
+		<property name="cfg.develop.dir" value="${cfg.dir}/develop"/>
+		<property name="cfg.testing.dir" value="${cfg.dir}/testing"/>
+		<property name="cfg.production.dir" value="${cfg.dir}/production"/>
+		<property name="compile.lib.dir" value="../j2eelib"/>
+		<property name="webinf" value="WEB-INF"/>
+		<property name="lib.dir" value="${web.dir}/${webinf}/lib"/>
+		<property name="build.dir" value="build"/>
+		<property name="build.web.dir" value="${build.dir}/WebRoot"/>
+		<property name="build.dest.dir" value="${build.dir}/dest"/>
+		<property name="build.webinf.dir" value="${build.web.dir}/WEB-INF"/>
+		<property name="build.classes.dir" value="${build.webinf.dir}/classes"/>
+		
+		<path id="classpath" >
+		  <fileset dir="${lib.dir}">
+		  	<include name="**/*.jar"/>
+		  </fileset>
+		  <fileset dir="${compile.lib.dir}">
+		  	<include name="**/*.jar"/>
+		  </fileset>
+		</path>
+	</target>
+	
+	<!-- =================================================================== -->
+	<!-- Clean up.                                                           -->
+	<!-- =================================================================== -->	
+	<target name="clean" depends="init">
+        <delete dir="${build.web.dir}"/>
+	</target>
+
+	<!-- =================================================================== -->
+	<!-- Prepares the build directory                                        -->
+	<!-- =================================================================== -->
+	<target name="build-prepare">
+	    <mkdir dir="${build.dir}"/>
+	    <mkdir dir="${build.web.dir}"/>
+	    <mkdir dir="${build.webinf.dir}"/>
+	    <mkdir dir="${build.classes.dir}"/>
+	    <mkdir dir="${build.dest.dir}"/>
+	</target>
+	
+	<!-- ====================================================================== -->
+	<!-- Compiles the source directory omitting files depending on jars present -->
+	<!-- ====================================================================== -->
+
+	<target name="compile" depends="build-prepare">
+	    <javac srcdir="${src.dir}" 
+	      destdir="${build.classes.dir}"
+	      debug="on"
+	      encoding="utf-8">
+	      <classpath refid="classpath"/>
+	    </javac>
+	</target>
+
+	<!-- ====================================================================== -->
+	<!-- Create war file of source code                                         -->
+	<!-- ====================================================================== -->
+    <target name="copy-web-files" description="Copy static files">
+        <!-- Copy JSP Pages under WEB-INF/pages -->
+        <copy todir="${build.web.dir}" includeEmptyDirs="no">
+            <fileset dir="${web.dir}">
+                <include name="**/*"/>
+				<exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <!-- Copy JSP Pages under WEB-INF/pages -->
+        <copy todir="${build.classes.dir}">
+            <fileset dir="${src.dir}">
+                <exclude name="**/*.java"/>
+			      </fileset>
+        </copy>
+	</target>
+
+    <target name="copy-web-develop-files" description="Copy static files">
+        <copy todir="${build.web.dir}" includeEmptyDirs="no">
+            <fileset dir="${web.dir}">
+                <include name="**/*"/>
+					<exclude name="**/*.class"/>
+				</fileset>
+        </copy>
+        <copy todir="${build.classes.dir}">
+            <fileset dir="${src.dir}">
+                <include name="**/*"/>
+				<exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy file="${cfg.develop.dir}/ap.properties" tofile="${build.classes.dir}/ap.properties" overwrite="true" />
+        <copy file="${cfg.develop.dir}/ap-properties.xml" tofile="${build.properties.dir}/ap-properties.xml" overwrite="true" />
+		<copy file="${cfg.develop.dir}/logback.xml" tofile="${build.classes.dir}/logback.xml" overwrite="true" />
+    </target>
+    
+    <target name="copy-web-testing-files" description="Copy static files">
+        <copy todir="${build.web.dir}" includeEmptyDirs="no">
+            <fileset dir="${web.dir}">
+                <include name="**/*"/>
+					<exclude name="**/*.class"/>
+				</fileset>
+        </copy>
+        <copy todir="${build.classes.dir}">
+            <fileset dir="${src.dir}">
+                <include name="**/*"/>
+				<exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    	<copy file="${cfg.testing.dir}/ap.properties" tofile="${build.classes.dir}/ap.properties" overwrite="true" />
+		<copy file="${cfg.testing.dir}/logback.xml" tofile="${build.classes.dir}/logback.xml" overwrite="true" />
+    </target>
+    
+    <target name="copy-web-production-files" description="Copy static files">
+        <copy todir="${build.web.dir}" includeEmptyDirs="no">
+            <fileset dir="${web.dir}">
+                <include name="**/*"/>
+					<exclude name="**/*.class"/>
+				</fileset>
+        </copy>
+        <copy todir="${build.classes.dir}">
+            <fileset dir="${src.dir}">
+                <include name="**/*"/>
+				<exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy file="${cfg.production.dir}/ap.properties" tofile="${build.classes.dir}/ap.properties" overwrite="true" />
+		<copy file="${cfg.production.dir}/logback.xml" tofile="${build.classes.dir}/logback.xml" overwrite="true" />
+    </target>
+	<!-- ====================================================================== -->
+	<!-- Create war file of source code                                         -->
+	<!-- ====================================================================== -->
+ 	<target name="war" depends="">
+    	<!-- Copy .properties files in src tree to build/web/classes -->
+         <war warfile="${build.dest.dir}/${name}.war" webxml="${build.webinf.dir}/web.xml">
+            <classes dir="${build.classes.dir}" />
+            <fileset dir="${build.web.dir}">
+            	<include name="**/*.*" />
+            	<exclude name="**/web.xml" />
+				<exclude name="**/*.properties" />
+				<exclude name="**/logback.xml" />
+				<exclude name="**/*.class" />
+            </fileset>
+        </war> 
+    </target>
+
+    <target name="del-web.xml" depends="">
+    	<delete file="${build.webinf.dir}/web.xml"/>
+    </target>
+    
+    <target name="local" depends="clean, compile, copy-web-files, war" description="Build local war.">
+        <echo message="Local application built success."/>
+    </target>
+
+    <target name="develop" depends="clean, compile, copy-web-develop-files, war, del-web.xml" description="Build develop war.">
+        <echo message="Develop application built success."/>
+    </target>
+	
+    <target name="testing" depends="clean, compile, copy-web-testing-files, war, del-web.xml" description="Build testing war.">
+        <echo message="Testing application built success."/>
+    </target>
+    
+    <target name="production" depends="clean, compile, copy-web-production-files, war, del-web.xml" description="Build production war.">
+        <echo message="Produection application built success."/>
+    </target>
+</project>

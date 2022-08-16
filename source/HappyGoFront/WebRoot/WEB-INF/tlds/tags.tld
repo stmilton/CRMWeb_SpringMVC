@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+	<tlib-version>1.0</tlib-version>
+	<short-name>mdbs</short-name>
+	<uri>/WEB-INF/tlds/tags</uri>
+	<tag>
+		<name>stringTruncate</name>
+		<tag-class>com.mdbs.web.tag.stringTruncateTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>len</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>symbol</name>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>sizeInfo</name>
+		<tag-class>com.mdbs.web.tag.sizeInfoTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>width</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>height</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>nl2br</name>
+		<tag-class>com.mdbs.web.tag.nl2br</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+	<tag>
+		<name>stringBreakToBrTag</name>
+		<tag-class>com.mdbs.web.tag.stringBreakToBrTag</tag-class>
+		<body-content>JSP</body-content>
+<!-- 		<description> -->
+<!--         break to br tag -->
+<!--     </description> -->
+	</tag>
+	<tag>
+		<name>convertChineseYear</name>
+		<tag-class>com.mdbs.web.tag.convertChineseYear</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+	<tag>
+		<name>convertTwyYear</name>
+		<tag-class>com.mdbs.web.tag.convertTwyYear</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>separator</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>

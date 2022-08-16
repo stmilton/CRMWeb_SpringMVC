@@ -1,0 +1,620 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+	font-size: 18px;
+	line-height: 140%;
+}
+body {
+	overflow-x:hidden;
+}
+.wrapper {
+	width: auto;
+	margin: 0 auto;
+}
+img {
+	margin: 0;
+	padding: 0;
+	height: auto;
+	max-width: 100%;
+}
+.top {
+	display:none;
+}
+.header {
+	display:none;
+}
+.wm-auto {
+	width: 90%;
+	margin: 0 auto;
+}
+.pushy {
+	display:block;
+}
+/*手機側邊選單*/
+
+.m-header {
+	display: block;
+	width: 100%;
+	height: 45px;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:99;
+	background-color:rgba(255, 255, 255, 0.9);
+}
+.m-header .logo {
+	display:block;
+	width:160px;
+	height:45px;
+	margin:0 auto;
+	background: url(../images/phone/logo_m.png) center center no-repeat;
+	background-size: auto 25px;
+}
+.menu-btn {
+	display:block;
+	width:45px;
+	height:45px;
+	color:none;
+	padding:0;
+	margin:0;
+	float:left;
+	cursor: pointer;
+	background: url(../images/phone/menu_icon.png) 0 0 no-repeat;
+	background-size: auto 45px;
+}
+
+/*footer*/
+.m-none {
+	display:none;
+}
+.m-block {
+	display:block;
+	margin-top:45px;
+}
+.footer {
+	padding:0;
+	min-width:100%;
+}
+.footer .copybox {
+	border-top:none;
+	padding:0;
+	margin-top:10px;
+}
+.footer .copybox .fL {
+	width:100%;
+	margin-bottom:10px;
+}
+.footer .copybox .fL p {
+	font: normal 12px/150% "微軟正黑體";
+	text-align:left;
+	color:#626262;
+}
+.footer .f-sharenav {
+	margin-top:0;
+	width:300px;
+}
+.footer .f-sharenav.clr {
+	clear:none;
+}
+.footer .f-sharenav li {
+	margin-top:20px;
+}
+#adbox {
+	display: none;
+}
+/*大圖輪播*/
+
+.slider {
+	width:100%;
+	max-width:100%;
+}
+#inContainer {
+	padding:0;
+}
+.boxarea {
+	width:100%;
+	margin: 0 auto 25px auto;
+}
+.box {
+	width:92%;
+	margin: 0 auto 10px;
+}
+#container {
+	margin:0;
+	padding:0;
+	margin-top:45px;
+}
+.contractor.rspage {
+	margin-top:0;
+}
+/*首頁列表文字*/
+
+.tt {
+	margin-bottom: 10px;
+	text-align: left;
+}
+/*首頁上方區塊*/
+.toparea {
+	width:90%;
+	margin:0 auto;
+}
+.grid .box_b {
+	float: left;
+	width: 23%;
+	cursor: pointer;
+}
+.box_s {
+	width:100%;
+}
+.box_s .banner {
+	margin:0;
+	width: 100%;
+	float:none;
+	clear:both;
+}
+.box_s .banner img {
+	width: 100%;
+	height: auto;
+}
+.grid li:first-child {
+	margin-left:0;
+}
+.grid li {
+	float: left;
+	margin-left:0;
+	margin-right:2.5%;
+	margin-bottom:10px;
+	height:auto;
+}
+.grid li:last-child {
+	margin-right:0;
+}
+.grid li a, .grid li img {
+	outline: none;
+	border: none;
+	display: block;
+	max-width: 100%;
+}
+.grid .pic {
+	margin-bottom: 0px;
+}
+.block_effect {
+	opacity:0;
+	position: relative;
+	left: -20px;
+}
+.grid .imgSet {
+	position: relative;
+	overflow: hidden;
+	width: 23%;
+}
+.grid .imgSet .tt {
+	display:none;
+}
+.imgSet .pic img {
+	width:100%;
+}
+.overlay, .effect .overlay {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	transition: none;
+	height: auto;
+	/*background: url(../images/pic_bg.png) -180px 0 no-repeat;*/
+	background-image:url(../images/pic_bg.png);
+	background:rgba(0, 0, 0, 0.4);
+	top: auto;
+	bottom: 0;
+}
+.effect .overlay .expand {
+	top: auto;
+	bottom: 0;
+	margin-top: 0px;
+	opacity: 1;
+	-webkit-transition: none;
+	-moz-transition:none;
+	-o-transition:none;
+	transition:none;
+}
+.expand h4 {
+	font-size: 16px;
+	line-height: 140%;
+}
+.expand p {
+	display: none;
+}
+.effect .overlay .expand a{ height:auto; }
+/*搜尋pop*/
+
+
+/*首頁大圖輪播*/
+#slickbox {
+	margin:0 auto;
+	padding: 0;
+}
+.topbox {
+	max-width:100%;
+	height:auto;
+	margin:0;
+}
+.topbox li {
+	max-width:100%;
+	padding:0;
+}
+.topbox .variable-width {
+	width:100%;
+	height:114px;
+}
+.variable-width img {
+	width:100%;
+	height:auto;
+	padding:0;
+}
+#slickbox .fullbox ul.slick-dots {
+	display:none;
+}
+.fullbox {
+	width:100%;
+	height:auto;
+}
+.one-time {
+	width:100%;
+	height:auto;
+}
+.one-time img {
+	width:100%;
+	height:auto;
+}
+/*左右區塊滑動*/
+.responsive {
+	width:100%;
+	display:block;
+	height:auto;
+}
+.responsive .slick-prev, .responsive .slick-next {
+	top:70px;
+	display: none;
+}
+.responsive .slick-prev {
+	left:-32px;
+}
+.responsive .slick-next {
+	left:auto;
+	margin-left:0;
+}
+.product li .pic {
+	margin-bottom: 0px;
+}
+.product .shopname {
+	margin-top: -35px;
+	padding:6px 0px;
+	font-size: 16px;
+	color: #fff;
+	background-color: rgba( 0, 0, 0, 0.4);
+	display: block;
+		position:absolute;
+	z-index: 10;
+	right:0; left:0;
+}
+.product li .p_more {
+	display: none;
+}
+/* Dots */
+.slick-slider {
+	margin-bottom:0;
+}
+.tit {
+	padding: 10px 0;
+	margin-bottom: 10px;
+}
+.tit .chooset {
+	top:5px;
+}
+
+/*側選單 搜尋*/
+/*側選單 搜尋*/
+.pushy .search {
+	padding-top:15px;
+	width:90%;
+	height:90px;
+	max-width:250px;
+	margin:0 auto;
+	clear:both;
+	border-bottom:1px solid #dab699;
+}
+.search input.query-input {
+	float:left;
+	border:1px solid #ffa108;
+	font-size: 14px;
+	line-height: 28px;
+	border-radius:0;
+	background:none;
+	background-color:#fff;
+}
+.search input.query-input {
+	width:60%;
+	text-indent:5px;
+}
+.searchArea .search select {
+	width:36%;
+	padding: 0 4px;
+	height:30px;
+	margin-top:0;
+	border-radius:0;
+	border-left:0;
+	border:1px solid #ffa108;
+}
+
+
+.search .search_btn {
+	width: 100%;
+	height: 30px;
+	border-radius: 20px;
+	background: url(../images/searchicon.png) center no-repeat;
+	background-size:20px 20px;
+	background-color: #FE9E0B;
+	float:left;
+	margin:10px auto;
+}
+.search .search_btn a {
+	width: 100%;
+	height: 30px;
+	display: block;
+}
+.search .search_btn:hover {
+	background-color: #8f0035;
+}
+select {
+	border-radius: 0;
+	height: 40px;
+	padding: 0px;
+margin:5px 0;
+	line-height: 40px;
+	width: 32%;
+	vertical-align: middle;
+	box-sizing: border-box;
+	background: url(../images/select_arrow.png) right center no-repeat;
+background-size:20px 8px; padding-right:20px;
+-webkit-appearance: none;
+}
+/*搜尋結果頁籤*/
+.order {
+	margin-bottom: 10px;
+	position: relative;
+	text-indent:0;
+	height:auto;
+	top:0;
+	text-align:center;
+}
+.order .pages {
+	position: static;
+	margin-bottom: 5px;
+	text-align:center;
+}
+.order .pages li {
+	float:none;
+	display:inline-block;
+	height: 25px;
+	margin-left:0;
+	line-height: 25px;
+color: #666;
+margin-bottom:5px;
+}
+.order .pages li a {
+	color: #666;
+	display:block;
+	padding:0 5px;
+}
+.order .pages li.pre {
+	width:auto;
+	height:auto;
+	padding:0;
+	border-radius: 20px;
+	color: #fff;
+	background-color: #FFA209;
+}
+.order .pages li.pre a {
+	color: #fff;
+}
+
+.order .pages li:hover, .order .pages li.select {
+	border-radius:none;
+	color: #333;
+	background-color:none;	background:none;
+
+}
+.order .pages li:hover a, .order .pages li.select a {
+	color: #fff;
+		border-radius: 20px;
+	color: #fff;
+	background-color: #FFA209;
+}
+.p-block{ display:block;}
+/*搜尋功能NEW*/
+.findarea{display:block;width:100%;
+height:auto; 
+min-height:100px;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+		  padding:10px;}
+		  .findarea.full{ padding:10px 0;}
+.findbox{ 
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding:10px;
+ border:1px solid #ccc;
+	text-align:left;
+	position: relative;
+		
+}
+.findbox li{display:inline-block; vertical-align:middle;}
+.findbtn li{width:100%;}
+/* 搜尋欄位 1 雙下拉+輸入欄*/
+.findbox li.findselect{ 
+width:48.8%;
+}
+.findbox li.findtext{ 
+width:80%;
+margin-bottom:0;
+}
+.hg_count .findbox li.findtext{ 
+width:100%;
+margin-bottom:0;
+}
+.findbox li.findpush {
+	line-height: 0;
+	margin: 0 0 0px;
+}
+.findbox li.findpush input{
+	line-height: 35px;
+	height: 35px;
+	position: absolute;
+	right: 10px;
+	bottom:10px;
+}
+
+/* 搜尋欄位 2 下拉+輸入欄*/
+.findbox.type2 li.findselect{ 
+width:38%;
+}
+.findbox.type2 li.findtext{ 
+width:40%;
+}
+/* 搜尋欄位 3 輸入欄+下拉 for 小網側邊選單*/
+.findbox.type3{ border-color:#f6c59c; padding:10px;
+background-color:rgba(100%, 100%, 100%, 0.2);}
+.findbox.type3 li{ margin:0; display:inline-block; border:0; text-indent:0;}
+.findbox.type3 li.findselect{ 
+width:74%;
+color:#644c34;
+}
+.findbox.type3 li.findtext{ 
+width:100%;color:#644c34;
+}
+
+.findbox.type3 select, .findbox.type3 input[type="text"]{
+	border-color:#cfb9a6;}
+
+.findselect select, .findtext input[type="text"]{
+	border:none;
+	border-bottom:1px solid #ddd;
+	background-color:#fff;
+	background-image:none;
+
+	font-size: 18px;
+	width:100%;
+	line-height:30px;
+	border-radius: 0;
+
+	margin:0;padding:4px;
+	
+	-webkit-appearance:none;
+ -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+	}
+.findtext input[type="text"]{ 
+background: url(../images/subnav-search.png) 5px center no-repeat;
+background-size: auto 20px; padding-left:30px;}
+.findselect select{
+	background: url(../images/select_arrow.png) right center no-repeat;
+background-size:20px 8px; padding-right:20px;}
+
+
+/*按鈕樣式1*/
+
+.findpush input[type="button"]{
+	background-image:none;
+background-color: #ffa209;
+    border: 0 none;
+    border-radius: 3px;
+    font-size: 18px;
+	font-weight:normal;
+    line-height: 40px;
+    vertical-align: middle;
+	margin-top:5px;
+	padding:0 5px;
+}
+
+
+/*按鈕樣式2*/
+.findtext input[type="button"].btn{
+	background-image:none;
+background-color: #ffa209;
+    border: 0 none;
+    border-radius: 3px;
+    font-size: 18px;
+    line-height: 30px;
+    vertical-align: middle;
+	width:100%;
+	margin-top:10px;
+}
+.hg_count .tit .search {
+	display: none;
+}
+.backbtn input[type="button"]{	
+	font-size: 15px;
+	line-height: normal;
+	height: 30px;
+}
+/*廣告行銷*/
+.s_area {
+	text-align:center;
+	min-height:380px;
+}
+.s_pic {
+	height:auto;
+	margin-bottom:-6px;
+}
+.s_titpic {
+	position:absolute;
+	left:20px;
+	top:-20px;
+	width:120px;
+}
+.s_menu {
+	padding:15px 0;
+	background-color:#b8b4b4;
+	text-align:right;
+	position:relative;
+}
+.s_menu a {
+	font-size:24px;
+	line-height:30px;
+	display:inline-block;
+	padding:0 10px;
+}
+.s_menu a:first-child {
+	border-right:1px solid #333;
+}
+.s_tips {
+	text-align:left;
+	padding:20px 20px 20px 150px;
+	text-align:justify;
+}
+.s_tips p {
+	color:#666;
+	font-size:20px;
+	line-height:140%;
+}
+.s_info{ border:1px solid #e9372e;
+	border-radius: 10px;
+	padding:20px;
+	margin-bottom:10px;}
+	.s_info p{font-size:21px; color:#111; text-align:left;}
+/*廣告-服務項目*/
+.s_center{
+	text-align:center; margin-bottom:20px;}
+	.s_center li{ 
+	display:inline-block; 
+	border-right:1px solid #ddd;
+	padding:0; margin:0;
+	width:20%;}
+	.s_center li.bRn{ border-right:none;}
+	.s_center .line{border-bottom:1px solid #eee;}
+	.s_center .up{ margin-top:-20px; margin-bottom:20px;}
+	
+	.cusbox{ height:50px;}
+.cusbox img{ display:none;}

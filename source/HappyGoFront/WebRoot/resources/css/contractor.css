@@ -1,0 +1,276 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--------------------------------------------快樂購特約商---------------------------------------------*/
+.code { font-size: 15px; text-align: right; color: #006bd8; background: url(../images/phone/icon-refresh.jpg) 0 center no-repeat; background-size: 20px 20px; float: right; text-indent: 20px; margin-left: 2px; }
+.code a { color: #006bd8; }
+.contractor { width: 1000px; margin: 0 auto 25px; }
+.contractor .tit { border-bottom: 1px solid #b7b7b7; border-top: 2px solid #f1635d; background-color: #FAFAFA; text-indent: 15px; color: #f1635d; font-size: 24px; padding: 15px 0; position: relative; }
+.red { color: #990a39; }
+/*圖文左右條列設定(單元4/6 用)*/
+.listarea { width: 100%; }
+.listarea li { display: block; position: relative; width: 100%; height: 230px; padding: 20px 0; box-sizing: border-box; border-bottom: 1px solid #ccc; }
+.listarea li .imgbox { width: 200px; float: left; margin-right: 20px; }
+.listarea li .imgbox img { width: 100%; height: auto; }
+.listarea li .morebox { position: absolute; bottom: 20px; left: 220px; }
+.listarea li .more { text-align: center; float: left; width: 130px; margin-right: 10px; }
+.listarea li .more a { text-align: center; color: #ff7700; display: block; line-height: 30px; border: 1px dotted #ccc; }
+.listarea li .more a:hover { background-color: #ff7700; color: #fff; }
+.listarea h3 { color: #444; font-size: 24px; margin-bottom: 10px; }
+.listarea h5 { color: #333; font-size: 16px; padding: 10px 0; }
+.listarea h5 a { color: #b3486b }
+.listarea h5 a:hover { color: #9a0d3b; }
+.listarea p { color: #333; font-size: 16px; line-height: 24px; margin-bottom: 10px; height: 115px; overflow: hidden; }
+/*特別提醒*/
+.contractor .tipsarea { background-color: #F0F0F0; padding: 40px 35px 25px 35px; margin-top: 30px; position: relative; }
+.contractor .tipsarea .title { background: url(../images/notice-4.png) no-repeat; width: 120px; height: 35px; position: absolute; top: -15px; left: 0px; }
+/*--內頁--*/
+.eventin { margin-top: 35px; }
+.storeinfo { margin-bottom: 10px; }
+.storeinfo .pic { width: 300px; height: 300px; float: left; }
+.storeinfo .pic img { width: 100%; height: auto; }
+.storeinfo .picp { display: none; }
+.storeinfo .info { width: 690px; height: auto; float: right; }
+.storeinfo .info h3 { font-size: 32px; font: 32px/36px "微軟正黑體"; margin-bottom: 40px; position: relative; }
+.storeinfo .info h3 .score { position: absolute; top: -10px; right: 0; }
+.storeinfo .info .data { border-bottom: 1px solid #cfcfcf; padding-bottom: 6px; margin-bottom: 5px; position: relative; }
+.storeinfo .info .data .brand { color: #b3486b; }
+.storeinfo .info .data .popular { color: #095dc5; }
+.storeinfo .info .data .share { float: right; }
+/*分享*/
+.storeinfo .info .data .share { position: absolute; right: 0; bottom: 5px; }
+.storeinfo .info .data .btn_fb { position: absolute; right: 210px; bottom: 5px; }
+.storeinfo .info .data .share li { float: left; width: 28px; height: 28px; margin-left: 10px; }
+.storeinfo .info .data .share li a { width: 28px; height: 28px; display: block; }
+.storeinfo .info .data .share li.txt { width: 50px; font-size: 16px; line-height: 28px; }
+.storeinfo .info .data .share li.google { background: url(../images/s-google.jpg) no-repeat; background-size: contain; background-image: url(../images/s-google_ie8.jpg) \9; background-repeat: no-repeat \9; }
+.storeinfo .info .data .share li.fb { background: url(../images/s-fb.jpg) no-repeat; background-size: contain; background-image: url(../images/s-fb_ie8.jpg) \9; background-repeat: no-repeat \9; }
+.storeinfo .info .data .share li.mail { background: url(../images/s-mail.jpg) no-repeat; background-size: contain; background-image: url(../images/s-mail_ie8.jpg) \9; background-repeat: no-repeat \9; }
+.storeinfo .info .data .share li.p { background: url(../images/s-p.jpg) no-repeat; background-size: contain; background-image: url(../images/s-p_ie8.jpg) \9; background-repeat: no-repeat \9; }
+/*加入收藏*/
+.storeinfo .info .data .add { position: absolute; width: 80px; height: 25px; border-radius: 3px; border: 1px solid #EBEBEB; background-color: #FAFAFA; right: 210px; bottom: 5px; font-size: 13px; text-align: center; line-height: 25px; }
+.storeinfo .info .data .sharebtn { display: none; }
+.storeinfo .info .data .select { border: 1px solid #ffa109; background-color: #fff; color: #ffa109 }
+.storeinfo .info .data .select a { color: #ffa109 }
+/*詳細資訊*/
+.storeinfo .info .list li { border-bottom: 1px solid #cfcfcf; border-left: 5px solid #b3486b; margin-bottom: 4px; color: #959595; font-size: 16px; position: relative; padding: 3px 0 3px 80px; min-height: 30px; word-break: break-all; }
+.storeinfo .info .list li span.tt { color: #434343; font-size: 16px; position: absolute; left: 5px; top: 3px; }
+.storeinfo .info .list li span.space { word-spacing: 4px; font-size: 16px; top: 3px; }
+.storeinfo .info .list li a { color: #b3486b; font-size: 13px; }
+.storeinfo .info .list li .btn { font-size: 13px; color: #fff; }
+.storeinfo .info .list li .btn a { color: #fff; min-width: 80px; height: 30px; margin-left: 10px; margin-bottom: 10px; padding: 1px 5px; background-color: #ffa109; border-radius: 3px; }
+/*活動說明*/
+.eventin .explain { margin-bottom: 20px; }
+.eventin .explain h4 { font-size: 20px; color: #b3486b; border-bottom: 1px solid #b3486b; padding-bottom: 10px; font-weight: 400; }
+.eventin .explain .txt { padding: 10px 0; }
+/*優惠活動*/
+.favorable { position: relative; }
+.favorable .list { border-bottom: 1px solid #eee; margin: 20px 0 10px 0; }
+.favorable h4 { font-size: 20px; border-bottom: 1px solid #d9d9d9; border-top: 1px solid #d9d9d9; padding: 10px 0; font-weight: 400; }
+.favorable .remark { position: absolute; right: 0; top: 10px; }
+.favorable .remark li { right: 10px; border-radius: 3px; text-align: center; line-height: 20px; padding: 2px 5px; height: 20px; color: #fff; font-size: 16px; float: left; margin-left: 5px; }
+.favorable .remark li.orgbg { background-color: #FF9C03; }/*免費得點*/
+.favorable .remark li.greenbg { background-color: #5FB96F; }/*累點活動*/
+.favorable .remark li.redbg { background-color: #DF6850; }/*兌點活動*/
+.favorable .remark li.perbg { background-color: #9081EA; }/*持卡優惠*/
+.favorable .remark li.blubg { background-color: #0099CC }/*主題活動*/
+.favorable .list { }
+.favorable .list li { width: 320px; float: left; margin-right: 15px; height: 45px; line-height: 45px; text-indent: 50px; overflow: hidden; text-overflow : ellipsis; white-space : nowrap; margin-bottom: 15px; }
+.favorable .list li:nth-child(3n) { margin-right: 0px; } /*倍數套用*/
+.favorable .list li.f01 { background: url(../images/fav01.jpg) no-repeat; background-size: contain; }
+.favorable .list li.f02 { background: url(../images/fav02.jpg) no-repeat; background-size: contain; }
+.favorable .list li.f03 { background: url(../images/fav03.jpg) no-repeat; background-size: contain; }
+.favorable .list li.f04 { background: url(../images/fav04.jpg) no-repeat; background-size: contain; }
+.favorable .list li.f05 { background: url(../images/fav05.jpg) no-repeat; background-size: contain; }
+/*主題活動*/
+.eventinfo { margin-top: 35px; }
+.eventinfo .pic { width: 1000px; height: 300px; margin-bottom: 25px; }
+.eventinfo h3 { font-size: 32px; margin-bottom: 20px; font-weight: 400; }
+.eventinfo .data { border-bottom: 1px solid #cfcfcf; padding-bottom: 6px; margin-bottom: 15px; position: relative; }
+.eventinfo .data .brand { color: #b3486b; }
+.eventinfo .data .popular { color: #095dc5; }
+.eventinfo .data .share { float: right; }
+/*主題活動-分享*/
+.eventinfo .data .share { position: absolute; right: 0; bottom: 5px; }
+.eventinfo .data .share li { float: left; width: 28px; height: 28px; margin-left: 10px; }
+.eventinfo .data .share li a { width: 28px; height: 28px; display: block; }
+.eventinfo .data .share li.txt { width: 50px; font-size: 16px; line-height: 28px; }
+.eventinfo .data .share li.google { background: url(../images/s-google.jpg) no-repeat; }
+.eventinfo .data .share li.fb { background: url(../images/s-fb.jpg) no-repeat; }
+.eventinfo .data .share li.mail { background: url(../images/s-mail.jpg) no-repeat; }
+.eventinfo .data .share li.p { background: url(../images/s-p.jpg) no-repeat; }
+/*主題活動-加入收藏*/
+.eventinfo .data .add { position: absolute; width: 80px; height: 25px; border-radius: 3px; border: 1px solid #EBEBEB; background-color: #FAFAFA; right: 210px; bottom: 5px; font-size: 15px; text-align: center; line-height: 25px; }
+.eventinfo .data .select { border: 1px solid #ffa109; background-color: #fff; color: #ffa109 }
+.eventinfo .data .select a { color: #ffa109 }
+/*主題活動-詳細資訊*/
+.eventinfo .info { }
+.eventinfo .info .list { width: 320px; float: left; }
+.eventinfo .info .list li { border-bottom: 1px solid #cfcfcf; border-left: 5px solid #b3486b; margin-bottom: 10px; color: #959595; padding-bottom: 8px; padding-left: 100px; position: relative; }
+.eventinfo .info .list li .tt { padding-right: 20px; color: #434343; position: absolute; left: 10px; }
+.eventinfo .info .list li .space { word-spacing: 4px; font-size: 15px; }
+.eventinfo .info .list li a { color: #b3486b; }
+.eventinfo .info .list li .btn { padding: 3px; background-color: #ffa109; border-radius: 3px; font-size: 13px; color: #fff; margin-left: 10px; }
+.eventinfo .info .list li .btn a { color: #fff; }
+/*主題活動-活動說明*/
+.eventinfo .explain { float: right; width: 665px; }
+.eventinfo .explain h4 { font-size: 20px; color: #b3486b; border-bottom: 1px solid #b3486b; padding-bottom: 8px; font-weight: 400; }
+.eventinfo .explain .txt { padding: 10px 0; }
+/*網頁版表格樣式*/
+.webstyle { display: block; }
+/*網頁版表格樣式*/
+.phonestyle { display: none; }
+/*特約商 列表*/
+.proposal { margin: 10px auto; }
+.proposal .item { border: 1px solid #ddd; background-color: #fafafa; }
+.proposal .item h3 { font: normal 24px/30px "微軟正黑體"; }
+.proposal .item h3 a { text-align: center; overflow : hidden; text-overflow : ellipsis; white-space : nowrap; width: 80%; display: block; margin: 20px auto 0 auto; }
+.proposal .item h5 a { height: 30px; width: 90%; margin: 0 auto; overflow : hidden; text-overflow : ellipsis; white-space : nowrap; text-align: center; color: #b3486b; display: block; }
+.proposal .item h5 a { text-align: center; color: #b3486b; font: normal 18px/30px "微軟正黑體"; }
+.proposal .item h5 a:hover { color: #970535; }
+.proposal .item .pic { width: 100%; height: 320px; }
+.proposal .item .pic img { width: 100%; height: auto; }
+.proposal .item .btn { width: 126px; height: 30px; border: 1px dotted #ccc; margin: 15px auto; text-align: center; color: #ff7700; line-height: 30px; }
+.proposal .item .btn a { width: 126px; height: 30px; display: block; color: #ff7700; }
+.proposal .item .btn a:hover { background-color: #ff7700; color: #fff; }
+.proposal .list { margin-left: -20px; }
+.proposal .list li { float: left; width: 320px; margin-left: 20px; margin-bottom: 20px; }
+
+/*手機版*/
+@media only screen and ( max-width:999px) {
+img { height: auto; max-width: 100%; }
+.top { display: none; }
+.menu { display: none; }
+/*搜尋pop*/
+
+.popup .wbg { width: 90%; margin: 30px auto; background-color: #fff; border-radius: 3px; box-sizing: border-box; }
+.popup .wbg p { padding: 5px 10px; width: 100%; box-sizing: border-box; }
+.popup .wbg select { float: none; width: 100%; }
+.popup .btnset { padding: 10px 0; width: 100%; margin: 10px auto; background-color: #f8f8f8; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; }
+.popup .btnset .btn { width: 95px; height: 60px; font: bold 20px/60px "微軟正黑體"; background-color: #ffa109; border-radius: 3px; color: #fff; cursor: pointer; margin: 0 auto; }
+.popup .btnset .btn a { width: 95px; height: 30px; color: #fff; display: block; }
+.btnset ul { padding: 0 20px; }
+.btnset li { width: 46%; height: 60px; font: bold 20px/60px "微軟正黑體"; background-color: #ffa109; color: #fff; text-align: center; border-radius: 3px; margin: 0; cursor: pointer; float: left; }
+.btnset li:nth-child(even) { float: right; }
+.btnset li a { color: #fff; }
+.btnset li:hover { color: #970535; }
+/*我要評分*/
+.popup .wbg .scroe { padding: 10px; margin-left: 10px; }
+.popup .wbg .scroe li { width: 100%; display: inline-block; font-size: 24px; margin-top: 10px; }
+.popup .wbg .scroe li img { width: 50px; height: auto; float: left; }
+.popup .wbg .scroe input[type="checkbox"] { vertical-align: middle; width: 24px; height: 24px; }
+.popup .wbg .scroe p { padding: 5px 10px; float: left; width: 60%; line-height: 40px; box-sizing: border-box; }
+/*門市資料*/
+.popup .wbg .shopinfo { padding: 10px; padding-bottom: 0; }
+/*網頁版表格樣式*/
+.webstyle { display: none; }
+/*網頁版表格樣式*/
+.phonestyle { display: block; }
+/*手機版開合樣式*/
+.phonestyle { display: block; font-size: 18px; margin-bottom: 20px; }
+.phonestyle li { width: 100%; padding: 0 0px; box-sizing: border-box; margin-bottom: 5px; }
+.phonestyle li .octit { height: 36px; text-indent: 5px; line-height: 36px; font-size: 18px; color: #FFF; }
+.phonestyle li .open { background: url(../images/phone/open.png) right no-repeat; background-color: #8C8C8C; background-size: 25px 25px; }
+.phonestyle li .close { background: url(../images/phone/close.png) right no-repeat; background-color: #FFA209; background-size: 25px 25px; }
+.phonestyle table { border-bottom: 1px solid #E5E5E5; }
+.phonestyle th { background-color: #F6F6F6; padding: 3px 5px; width: 4em; text-align: center; }
+.phonestyle th.bg { background-color: #ECECEC; }
+.phonestyle td { padding: 3px 5px; }
+.phonestyle tr.bg { background-color: #F6F6F6; }
+#container { background-color: #fff; padding: 0; }
+/*------------------------------------------------快樂購特約商------------------------------------------------*/
+.contractor { width: 100%; margin: 0; }
+.contractor .tit { border-bottom: 1px solid #E3E3E3; border-top: 2px solid #f1635d; background-color: #FAFAFA; color: #f1635d; padding: 8px 0; font-size: 18px; }
+.contractor .none { display: none; }
+.red { color: #990a39; display: block; }
+/*圖文左右條列設定(單元4 & 單元6 使用)*/
+.listarea { width: 100%; margin: 0 auto; padding: 0 6px; box-sizing: border-box; }
+.listarea li { display: block; position: relative; width: 48%; height: auto; padding: 0; padding-bottom: 10px; margin: 0 1% 10px 1%; box-sizing: border-box; border: 1px solid #ccc; background-color: #f2f2f2; float: left; }
+.listarea li .morebox { position: static; }
+.listarea li .more a { margin-top: 10px; }
+.listarea li .imgbox { width: 100%; height: auto; float: none; margin-top: 0; text-align: center; background-color: #fff; }
+.listarea h3, .listarea h5 { width: 90%; overflow : hidden; text-overflow : ellipsis; white-space : nowrap; }
+.listarea h3 { font-size: 22px; margin-top: 15px; margin-left: 10px; }
+.listarea h5 { font-size: 18px; padding: 5px 0; margin-left: 10px; }
+.listarea p { height: 70px; overflow : hidden; margin-left: 10px; font-size: 18px; line-height: 24px; }
+.morebox { width: 80%; margin: 0 auto; }
+.listarea li .more { width: 100%; }
+/*列表結束 END*/
+
+/*--內頁--*/
+.eventin { padding: 10px; margin: 0 auto; }
+.storeinfo { margin-bottom: 10px; }
+.storeinfo .pic { display: none }
+.storeinfo .picp { width: 150px; height: 150px; margin-right: 10px; float: left; display: inline; }
+.storeinfo .picp img { width: 100%; height: auto; }
+.storeinfo .info { width: 100%; height: auto; float: none; }
+.storeinfo .info h3 { font: 22px/30px "微軟正黑體"; margin-bottom: 10px; min-height: 150px; height: auto; }
+.storeinfo .info .data { border-bottom: 1px solid #cfcfcf; padding-bottom: 6px; margin-bottom: 5px; position: relative; font-size: 18px; height: 30px; }
+.storeinfo .info .data .brand { color: #b3486b; font-size: 13x; }
+.storeinfo .info .data .popular { color: #095dc5; }
+.storeinfo .info .data .share { float: right; }
+/*分享*/
+.storeinfo .info .data .share { position: absolute; right: 0; bottom: 5px; }
+.storeinfo .info .data .btn_fb { position: static; }
+.storeinfo .info .data .share li { float: left; width: 28px; height: 28px; margin-left: 10px; }
+.storeinfo .info .data .share li a { width: 28px; height: 28px; display: block; }
+.storeinfo .info .data .share li.txt { width: 50px; font-size: 16px; line-height: 28px; }
+.storeinfo .info .data .share li.google { background: url(../images/s-google.jpg) no-repeat; background-size: contain; }
+.storeinfo .info .data .share li.fb { background: url(../images/s-fb.jpg) no-repeat; background-size: contain; }
+.storeinfo .info .data .share li.mail { background: url(../images/s-mail.jpg) no-repeat; background-size: contain; }
+.storeinfo .info .data .share li.p { background: url(../images/s-p.jpg) no-repeat; background-size: contain; }
+/*加入收藏*/
+.storeinfo .info .data .add { position: absolute; width: 80px; height: 25px; border-radius: 3px; border: 1px solid #EBEBEB; background-color: #FAFAFA; right: 210px; bottom: 5px; font-size: 18px; text-align: center; line-height: 25px; top: 25px; left: 0; }
+.storeinfo .info .data .add a { width: 80px; height: 25px; display: block; }
+.storeinfo .info .data .sharebtn { position: absolute; width: 80px; height: 25px; border-radius: 3px; border: 1px solid #ffa109; background-color: #ffa109; right: 210px; bottom: 5px; font-size: 18px; text-align: center; line-height: 25px; top: 25px; left: 90px; color: #fff; }
+.storeinfo .info .data .sharebtn a { width: 80px; height: 25px; display: block; color: #fff; }
+.storeinfo .info .data .select { border: 1px solid #ffa109; background-color: #fff; color: #ffa109 }
+.storeinfo .info .data .select a { color: #ffa109 }
+/*詳細資訊*/
+.storeinfo .info .list { margin: 15px 0; }
+.storeinfo .info .list li { border-bottom: 1px solid #cfcfcf; border-left: 5px solid #b3486b; margin-bottom: 4px; color: #959595; font-size: 15px; position: relative; padding-left: 80px;/* padding:0 5px 4px 100px;*/
+}
+.storeinfo .info .list li span.tt { padding-right: 10px; color: #434343; font-size: 15px; position: absolute; top: 3px; left: 5px;/*padding-right: 20px;
+ color: #434343;
+ font-size: 15px;
+ position: absolute;
+ left: 5px; */
+}
+.storeinfo .info .list li span.space { word-spacing: 4px; font-size: 15px; }
+.storeinfo .info .list li a { color: #b3486b; }
+.storeinfo .info .list li .btn { font-size: 13px; color: #fff; }
+.storeinfo .info .list li .btn a { padding: 3px; background-color: #ffa109; border-radius: 3px; font-size: 13px; color: #fff; margin-left: 10px; }
+/*活動說明*/
+.eventin .explain { margin-bottom: 20px; }
+.eventin .explain h4 { font-size: 17px; color: #b3486b; border-bottom: 1px solid #b3486b; padding-bottom: 10px; font-weight: 400; }
+.eventin .explain .txt { padding: 10px 0; font-size: 18px; line-height: normal; }
+/*優惠活動*/
+.favorable { position: relative; }
+.favorable h4 { font-size: 18px; border-bottom: 1px solid #d9d9d9; border-top: 1px solid #d9d9d9; padding: 10px 0; font-weight: 400; margin-bottom: 10px; }
+.favorable .remark { position: absolute; right: 0; top: 10px; }
+.favorable .remark li { right: 10px; border-radius: 3px; text-align: center; line-height: 20px; padding: 2px 5px; height: 20px; color: #fff; font-size: 12px; float: left; margin-left: 5px; width: 25px; overflow: hidden; }
+.favorable .remark li.orgbg { background-color: #FF9C03; }/*免費得點*/
+.favorable .remark li.greenbg { background-color: #5FB96F; }/*累點活動*/
+.favorable .remark li.redbg { background-color: #DF6850; }/*兌點活動*/
+.favorable .remark li.perbg { background-color: #9081EA; }/*持卡優惠*/
+.favorable .remark li.blubg { background-color: #0099CC }/*主題活動*/
+.favorable .list { }
+.favorable .list li { width: 100%; float: none; margin-right: 0px; height: 35px; line-height: 35px; text-indent: 40px; overflow: hidden; text-overflow : ellipsis; white-space : nowrap; margin-bottom: 10px; }
+.favorable .list li:nth-child(3n) { margin-right: 0px; } /*倍數套用*/
+.favorable .list li.f01 { background: url(../images/phone/fav01.jpg) no-repeat; background-size: 35px 35px; }
+.favorable .list li.f02 { background: url(../images/phone/fav02.jpg) no-repeat; background-size: 35px 35px; }
+.favorable .list li.f03 { background: url(../images/phone/fav03.jpg) no-repeat; background-size: 35px 35px; }
+.favorable .list li.f04 { background: url(../images/phone/fav04.jpg) no-repeat; background-size: 35px 35px; }
+.favorable .list li.f05 { background: url(../images/phone/fav05.jpg) no-repeat; background-size: 35px 35px; }
+/*特約商 列表*/
+.proposal .list { padding: 0 6px; margin-left: 0; }
+.proposal .item { width: 100%; margin: 0 auto; padding-bottom: 10px; }
+.proposal .item .pic { height: auto; text-align: center; background-color: #fff; }
+.proposal .item .btn { display: none; }
+.proposal .item .btn a { width: 126px; height: 30px; display: block; color: #ff7700; }
+.proposal .item .btn a:hover { background-color: #ff7700; color: #fff; }
+.proposal .item h3 a { font-size: 21px; width: 90%; margin: 10px auto 0 auto; overflow : hidden; text-overflow : ellipsis; white-space : nowrap; }
+.proposal .list li { display: block; position: relative; width: 48%; height: auto; padding: 0; padding-bottom: 10px; margin: 0 1% 10px 1%; box-sizing: border-box; float: left; }
+.proposal .list li:nth-child(3n) { margin: 0 1% 10px 1%; }
+.proposal .item h5 a { text-align: center; color: #b3486b; font: normal 18px/30px "微軟正黑體"; display: block; height: 30px; width: 90%; }
+}

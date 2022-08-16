@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	-webkit-text-size-adjust: none;
+}/* 在 iOS 旋轉畫面鎖定文字不縮放 */
+#container {
+	background-color: #fff;
+}
+/*------------------------------------------------達人GO物誌(5)------------------------------------------------*/
+.master {
+	width: 1000px;
+	margin: 0 auto 25px;
+}
+.master .tit {
+	border-bottom: 1px solid #f58723;
+	border-top: 2px solid #f58723;
+	background-color: #FAFAFA;
+	text-indent: 15px;
+	color: #f58723;
+	padding: 15px 0;
+	margin-bottom: 35px;
+	font-size: 24px;
+	position: relative;
+}
+.master .tit .tab {
+	width: 300px;
+	position: absolute;
+	right: 0;
+}
+.master .tit .tab li {
+	width: 135px;
+	height: 25px;
+	text-align: center;
+	float: left;
+	margin-right: 15px;
+	font-size: 18px;
+	color: #666;
+	text-indent: 0;
+	line-height: 25px;
+}
+.master .tit .tab li.select {
+	background-color: #f58723;
+	border-radius: 3px;
+	color: #fff;
+}
+.master .tit .tab li.select a {
+	color: #fff;
+}
+.proposal {margin-bottom: 20px;}
+.proposal .topitem {margin-bottom: 20px;height:670px;}
+.proposal .topitem .item{ height:670px;}
+.proposal  .topitem .item .txt{ height:auto;}
+.proposal .itemleft {width: 660px;float: left;word-break: break-all; }
+.proposal .itemleft h3 {width: 640px;height: 50px;overflow: hidden;text-overflow : ellipsis;white-space : nowrap;}
+.proposal .itemright {width: 320px;float: right;}
+.proposal .itemright h3 {width: 305px;height: 50px;overflow: hidden;text-overflow : ellipsis;white-space : nowrap;}
+.proposal .item {border: 1px solid #ebebeb;}
+.proposal .item h3 {width: 305px;height: 50px;overflow: hidden;text-overflow : ellipsis;white-space : nowrap;}
+.proposal .item .pic {height: 210px;}
+.proposal .item .sort {color: #b3486b;font-size: 16px;padding: 10px 10px 0;}
+.proposal .item h3 {color: #464646;font-size: 24px;height: 50px;line-height: 50px;padding: 0 10px;}
+.proposal .item .txt {padding: 0 10px;height: 4.2em;overflow: hidden;}
+.proposal .item .btn {width: 126px;height: 30px;border: 1px dotted #ccc;margin: 15px auto;text-align: center;color: #ff7700;line-height: 30px;}
+.proposal .item .btn a {width: 126px;height: 30px;display: block;color: #ff7700;}
+.proposal .item .btn a:hover {background-color: #ff7700;color: #fff;}
+.proposal .list{margin-left:-20px;}
+.proposal .list li {float: left;width: 320px;margin-left:20px;margin-bottom: 20px;}
+
+.proposal .heading {border-bottom: 1px solid #cfcfcf;padding-bottom: 15px;position: relative;margin-bottom: 20px;}
+.proposal .heading .share {position: absolute;right: 0;bottom: 15px;}
+.proposal .heading .share li {
+	float: left;
+	width: 28px;
+	height: 28px;
+	margin-left: 10px;
+}
+.proposal .heading .share li a {
+	width: 28px;
+	height: 28px;
+	display: block;
+}
+.proposal .heading .share li.txt {
+	width: 50px;
+	font-size: 16px;
+	line-height: 28px;
+}
+.proposal .heading .share li.google {
+	background: url(../images/s-google.jpg) no-repeat;
+	background-size:contain;
+}
+.proposal .heading .share li.fb {
+	background: url(../images/s-fb.jpg) no-repeat;
+	background-size:contain;
+}
+.proposal .heading .share li.mail {
+	background: url(../images/s-mail.jpg) no-repeat;
+	background-size:contain;
+}
+.proposal .heading .share li.p {
+	background: url(../images/s-p.jpg) no-repeat;
+	background-size:contain;
+}
+.proposal .heading .headline {
+	font-size: 32px;
+	height: 45px;
+}
+.proposal .heading .date {
+	font-size: 16px;
+	color: #737373;
+}
+.proposal .heading .date span {
+	color: #b3486b;
+}
+.proposal .article {
+	font-size: 15px;
+}
+.proposal .article p {
+	margin-bottom: 10px;
+}
+.proposal .article img {
+	margin: 10px 0;
+}
+.recommend {
+}
+.recommend .titxt {
+	border-bottom: 1px solid #d9d9d9;
+	border-top: 1px solid #d9d9d9;
+	font-size: 20px;
+	height: 45px;
+	line-height: 45px;
+	margin-bottom: 20px;
+}
+.recommend li {
+	width: 175px;
+	float: left;
+	border: 1px solid #ebebeb;
+	margin-right: 28px;
+}
+.recommend li:last-child {
+	margin-right: 0px;
+}
+.recommend li .pic {
+}
+.recommend li h3 {
+	color: #464646;
+	font-size: 18px;
+	line-height: 25px;
+	padding: 0 5px;
+	height:50px;
+	overflow:hidden;
+}
+.recommend li .txt {
+	padding: 0 10px;
+	height: 4.4em;
+	overflow: hidden;
+	font-size: 15px;
+	color: #959595;
+}
+.recommend li .btn {
+	width: 126px;
+	height: 30px;
+	border: 1px dotted #ccc;
+	margin: 15px auto;
+	text-align: center;
+	color: #ff7700;
+	line-height: 30px;
+}
+.recommend li .btn a {
+	width: 126px;
+	height: 30px;
+	display: block;
+	color: #ff7700;
+}
+.recommend li .btn a:hover {
+	background-color: #ff7700;
+	color: #fff;
+}

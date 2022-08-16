@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+html, body { font-size: 18px; line-height: 140%; }
+body { overflow-x: hidden; }
+.wrapper { width: auto; margin: 0 auto; }
+img { margin: 0; padding: 0; height: auto; max-width: 100%; }
+.top { display: none; }
+.header { display: none; }
+.wm-auto { width: auto; padding: 0 20px; margin: 0 auto; }
+.pushy { display: block; }
+/*手機側邊選單*/
+
+.m-header { display: block; width: 100%; height: 40px; position: fixed; top: 0; left: 0; z-index: 99; background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(235,235,235,1)); }
+.m-header .logo { display: block; width: 160px; height: 40px; margin: 0 auto; background: url(../images/phone/logo_m.png) center center no-repeat; background-size: auto 40px; }
+.menu-btn { border-right: 1px solid #bdbbd7; width: 40px; height: 40px; color: none; position: absolute; top: 0; left: 0; cursor: pointer; background: url(../images/phone/menu_icon.png) 0 0 no-repeat; background-size: auto 40px; }
+.login-btn { border-left: 1px solid #bdbbd7; width: 40px; height: 40px; color: none; position: absolute; top: 0; right: 0; cursor: pointer; background: url(../images/phone/login_icon.png) 0 0 no-repeat; background-size: auto 40px; }
+.logout-btn { border-left: 1px solid #bdbbd7; width: 40px; height: 40px; color: none; position: absolute; top: 0; right: 0; cursor: pointer; background: url(../images/phone/logout_icon.png) 0 0 no-repeat; background-size: auto 40px; }
+/*footer*/
+.m-none { }
+
+.m-block { display: block; margin-top: 45px; }
+.footer { padding: 10px 0; min-width: 100%; }
+.footer .copybox { padding: 10px 0;}
+.footer .copybox p{ padding-right: 180px;}
+.footer .copybox p.copyright{ padding-right: 0px; text-align: center; padding-top: 10px; margin-top: 30px; border-top: 1px solid #ccc;}
+.footer .f-sharenav { margin-top: 0; width: 300px; }
+.footer .f-sharenav.clr { clear: none; }
+.footer .f-subnav ul { width: auto;}
+.footer .f-sharenav li { margin-top: 20px; }
+#adbox { display: none; }
+/*大圖輪播*/
+.slider { width: 100%; max-width: 100%; }
+
+#inContainer { padding: 0 15px; margin-bottom: 0px; }
+.boxarea { width: 100%; margin: 0 auto 0px auto; }
+.box { width: auto; margin: 0 auto 10px; }
+#container { margin: 0; padding: 0 15px; margin-top: 45px; }
+.contractor.rspage { margin-top: 0; }
+/*首頁列表文字*/
+
+.tt { margin-bottom: 10px; text-align: left; }
+/*首頁上方區塊*/
+.toparea { width: auto; margin: 0 auto; }
+.grid li.box_b { width: 23.87%; }
+.box_s { width: 100%; }
+.box_s .banner { margin: 0; width: 100%; float: none; clear: both; }
+.box_s .banner img { width: 100%; height: auto; }
+.grid li:first-child { margin-left: 0; }
+.grid li { margin-left: 1.5%; width: 23.87%; margin-bottom: 10px; height: auto; position: relative; }
+.grid li h3 { position: absolute; bottom: 0; left: 0; right: 0; font-size: 18px;}
+.grid li a, .grid li img { outline: none; border: none; display: block; width: 100%; }
+.grid .pic { margin-bottom: 0px; }
+
+.box_s.cardSet .banner { margin: 0; width: 100%; float: none; clear: both; }
+.cardSet .grid li.box_b { width: 23.87%; }
+.cardSet .grid li { margin-left: 1.5%; width: 23.87%; margin-bottom: 10px; height: auto; }
+
+.prodpic li {margin-right: 1%; width: 32.6%;}
+.prodpic li:last-child {margin-right: 0;}
+
+/* 卡友好康 */
+.indexShare { width: auto;}
+.breadcrumb {width: auto;}
+
+.boxLeft { float: none; width: auto; margin-right: 0px;}
+.boxRight { float: none; width: auto;}
+
+.viewList { padding: 10px 20px;}
+.videoBox { padding: 0px 0;}
+
+.product.cardSet { margin-right: 0px; }
+.product.cardSet li { margin-right: 2%; width: 32%; }
+.product.cardSet li:last-child { margin-right: 0; }
+.product.cardSet img { width: 100%; }
+
+.prodpic.cardSet li { margin-right: 2%; width: 32%; }
+.prodpic.cardSet li:last-child { margin-right: 0; }
+.prodpic.cardSet img { width: 100%; }
+
+
+/*搜尋結果頁籤*/
+.order { margin-bottom: 10px; position: relative; text-indent: 0; height: auto; top: 0; text-align: center; }
+.order .pages { position: static; margin-bottom: 5px; text-align: center; }
+.order .pages li { float: none; display: inline-block; height: 25px; margin-left: 0; line-height: 25px; color: #666; margin-bottom: 5px; }
+.order .pages li a { color: #666; display: block; padding: 0 5px; }
+.order .pages li.pre { width: auto; height: auto; padding: 0; border-radius: 20px; color: #fff; background-color: #FFA209; }
+.order .pages li.pre a { color: #fff; }
+.order .pages li:hover, .order .pages li.select { border-radius: none; color: #333; background-color: none; background: none; }
+.order .pages li:hover a, .order .pages li.select a { color: #fff; border-radius: 20px; color: #fff; background-color: #FFA209; }
+.p-block { display: block; }
+
+/*廣告行銷*/
+.s_area { text-align: center; min-height: 380px; }
+.s_pic { height: auto; margin-bottom: -6px; }
+.s_titpic { position: absolute; left: 20px; top: -20px; width: 120px; }
+.s_menu { padding: 15px 0; background-color: #b8b4b4; text-align: right; position: relative; }
+.s_menu a { font-size: 24px; line-height: 30px; display: inline-block; padding: 0 10px; }
+.s_menu a:first-child { border-right: 1px solid #333; }
+.s_tips { text-align: left; padding: 20px 20px 20px 150px; text-align: justify; }
+.s_tips p { color: #666; font-size: 20px; line-height: 140%; }
+.s_info { border: 1px solid #e9372e; border-radius: 10px; padding: 20px; margin-bottom: 10px; }
+.s_info p { font-size: 21px; color: #111; text-align: left; }
+/*廣告-服務項目*/
+.s_center { text-align: center; margin-bottom: 20px; }
+.s_center li { display: inline-block; border-right: 1px solid #ddd; padding: 0; margin: 0; width: 20%; }
+.s_center li.bRn { border-right: none; }
+.s_center .line { border-bottom: 1px solid #eee; }
+.s_center .up { margin-top: -20px; margin-bottom: 20px; }
+.cusbox { height: 50px; }
+.cusbox img { display: none; }

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="statusOption" class="java.util.LinkedHashMap">
+		<constructor-arg>
+			<map key-type="java.lang.String">
+				<entry key="1" value="啟用"></entry>
+				<entry key="0" value="停用"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="targetOption" class="java.util.LinkedHashMap">
+		<constructor-arg>
+			<map key-type="java.lang.String">
+				<entry key="0" value="原視窗開啟"></entry>
+				<entry key="1" value="另開新視窗"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+
+	<bean id="typeOption" class="java.util.LinkedHashMap">
+		<constructor-arg>
+			<map key-type="java.lang.String">
+				<entry key="0" value="次選單"></entry>
+				<entry key="1" value="連結"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="iconOption" class="java.util.LinkedHashMap">
+		<constructor-arg>
+			<map key-type="java.lang.String">
+				<entry key="0" value="無"></entry>
+				<entry key="1" value="NEW"></entry>
+				<entry key="2" value="HOT"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="booleanOption" class="org.springframework.beans.factory.config.MapFactoryBean">
+		<property name="sourceMap">
+			<map>
+				<entry key="1" value="是"></entry>
+				<entry key="0" value="否"></entry>
+			</map>
+		</property>
+	</bean>
+	
+</beans>
